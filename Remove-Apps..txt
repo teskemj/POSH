@@ -1,9 +1,0 @@
-﻿$badapps=get-content -path C:\posh\badapps.txt
-
-ForEach ($app in $badapps) {
-   $AppxPackage = Get-AppxProvisionedPackage -online | Where {$_.DisplayName -eq $App}
-   Remove-AppxProvisionedPackage -online -packagename ($AppxPackage.PackageName)
-   Remove-AppxPackage ($AppxPackage.PackageName)
-
-
-}
