@@ -1,7 +1,7 @@
-﻿$userid='mteske@techsolutions-wi.com'
+﻿$userid='youremail'
 $creds=Get-Credential $userid
 Send-MailMessage `
-    -To 'michael.teske@outlook.com' `
+    -To 'theiremail' `
     -Subject 'Test' `
     -Body 'Test' `
     -UseSsl `
