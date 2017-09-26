@@ -1,4 +1,5 @@
 ﻿$userid='youremail'
+#grab the credentials
 $creds=Get-Credential $userid
 Send-MailMessage `
     -To 'theiremail' `
