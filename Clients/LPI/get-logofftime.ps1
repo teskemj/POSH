@@ -1,7 +1,8 @@
 ﻿$user = $env:USERNAME
 $date = get-date -Format d
 $time = get-date -Format t
-$second = get-date -Format try {
+
+try {
     
 }
 catch {
