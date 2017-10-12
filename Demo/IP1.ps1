@@ -1,6 +1,6 @@
 ﻿# Grab IP enabled NICs
 
-$NICS = Get-WmiObject Win32_NetworkAdapterConfiguration -ComputerName $Computer -ErrorAction Stop | ? {$_.IPEnabled}
+$NICS = Get-WmiObject Win32_NetworkAdapterConfiguration -ComputerName localhost -ErrorAction Stop | where {$_.IPEnabled}
 
 # Testing
 # Process through each NIC in NICS
