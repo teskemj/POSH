@@ -2,7 +2,7 @@
  # Tools for testing for students
 #>
 
-# Is host online?
+# Is hostdd online?
 test-connection -ComputerName localhost
 
 # Is online, but don't vomit red if not online
