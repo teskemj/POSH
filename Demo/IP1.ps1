@@ -2,7 +2,7 @@
 
 $NICS = Get-WmiObject Win32_NetworkAdapterConfiguration -ComputerName $Computer -ErrorAction Stop | ? {$_.IPEnabled}
 
-
+# Testing
 # Process through each NIC in NICS
 foreach ($NIC in $NICs) {
     
