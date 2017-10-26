@@ -1,2 +1,2 @@
 # POSH
-This is my git sync test
+Random classroom demo files
