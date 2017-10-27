@@ -1,4 +1,5 @@
-﻿Set-Service -name sensrsvc -StartupType disabled
+﻿#This is an example of point and clicking in a script.
+Set-Service -name sensrsvc -StartupType disabled
 Set-Service -name DeviceAssociationService -StartupType Disabled
 Set-Service -name alg -StartupType disabled
 Set-Service -name bdesvc -StartupType disabled

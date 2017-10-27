@@ -1,0 +1,47 @@
+﻿  sensrsvc  
+  DeviceAssociationService  
+  alg  
+  bdesvc  
+  bthserv  
+  certpropsvc  
+  wdiservicehost  
+  wdisystemhost  
+  efs  
+  fax  
+  sharedaccess  
+  CscService  
+  HomeGroupListener  
+  HomeGroupProvider  
+  QWAVE  
+  SCardSvr  
+  SCPolicySvc  
+  SSDPSRV  
+  TabletInputService  
+  Themes  
+  wbiosrvc  
+  wcncsvc  
+  WerSvc   
+  WMPNetworkSvc  
+  WSearch  
+  WwanSvc  
+  SysMain  
+  ShellHWDetection  
+  FDResPub  
+  DPS  
+  PeerDistSvc  
+  Browser  
+  defragsvc  
+  RetailDemo  
+
+
+
+
+
+
+
+
+
+
+
+
+
