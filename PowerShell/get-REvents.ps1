@@ -10,6 +10,7 @@
         [string]$logname
     )
     Begin {
+        $cred = get-credential
     }
     Process{
         Write-Verbose "Here we go....."
