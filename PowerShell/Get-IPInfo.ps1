@@ -1,22 +1,10 @@
-# Fun clone "reimagining" of ipconfig -- the equivalent of ipconfig /all for three
-# NICs and still fits on a screen!
-
-# Copyright 2012 Mark Minasi, but go ahead and use it in any way that you'll find
-# helpful or fun... it'd be nice if you'd leave my name in it but otherwise give
-# it away, make better tools for yourself and your co-workers, that sort of thing.
-# My newsletters, seminars and forum are at http://www.minasi.com
-
-
-# The stuff between the <# and the #> is help... it's not part of the meat of the program.
-# TO INSTALL THIS:
+# # TO INSTALL THIS:
 # Create a folder called \WindowsPowerShell\Modules\ifconfig\ in your Documents folder.
 # Copy this text, paste it into Notepad, and save it in the ifconfig folder as
 # "ifconfig.psm1" and yes, that's right -- the file's name must match the folder
 # name.
 # Start up PowerShell, type "get-ipinfo," and it'll run.
 Function Get-IPInfo {
-    
-    
     <#
     .SYNOPSIS 
     Generates a summary report on your NIC and IP status.
@@ -64,7 +52,7 @@ Function Get-IPInfo {
     # retrieves what's in something like an environment variable or a file.
     # Name of variables in PowerShell, by the way, always start with a dollar sign.
     
-    $Hostname = (Get-Content ENV:Computername)
+    $Hostname = Get-CimInstance -ClassName Win32_ComputerSystem | select -ExpandProperty name
     
     # Next, get the suffix from the Registry. To do that, we examine the TCPIP/Parameters
     # Registry key, using Get-ItemProperty, and that's the roundabout way we've got to do
@@ -89,13 +77,8 @@ Function Get-IPInfo {
     " Host Name................: " + $Hostname 
     " Primary DNS Suffix.......: "+ $PrimaryDNSSuffix
     " DNS Suffix Search List...: " + $DNSSuffixSearchList 
-    
-    # Next, we'll start gathering information for each NIC. That'll be much easier if
-    # we have a list of NICs somewhere, so I'll use get-netadapter to get lots of info
-    # about each NIC, and store all of it in one big variable called $NICs.
-    # It does it with a new cmdlet called "get-netadapter" that delivers a
-    # data object for each real physical NIC that you have.
-    
+ 
+
     $NICs=get-netadapter
     
     # Now that I've got my bunch of NIC objects in $NICs, I want PowerShell to analyze
@@ -118,19 +101,14 @@ Function Get-IPInfo {
     # foreach commands -- one "nested" inside another.
     #
     
-    $NICs |
-    foreach { # for each NIC section
-    # Leave a blank line between what we've written so far and the beginning of 
-    # the section about this NIC... I want to look at ipconfig-ish as possible.
+    $NICs | ForEach-Object { 
     
-    write ""
+    Write-Output ""
     
     # Next, list the adapter's name, its index number and status as its section heading
     
     
     "Adapter '" + $_.interfacealias + "' Index=" + $_.ifindex + " Status="+$_.status + ":"
-    
-    # Another blank line, again very ipconfig-ish
     
     ""
     # And then a series of statistics about this NIC
@@ -184,5 +162,5 @@ Function Get-IPInfo {
     ""
     } # Done with that NIC, leave a blank line and on to the next one
     } # And now we're done!
-    }
+}
      

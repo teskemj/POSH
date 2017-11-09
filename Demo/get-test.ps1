@@ -3,7 +3,7 @@
 #>
 
 # Is hostdd online?
-test-connection -ComputerName localhost
+test-connection -ComputerName localhost  
 
 # Is online, but don't vomit red if not online
 test-connection -ComputerName localhost -ErrorAction SilentlyContinue
