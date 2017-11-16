@@ -10,14 +10,13 @@
         [string]$logname
     )
     Begin {
+        $cred = get-credential
     }
     Process{
-        Write-Verbose "Here we go"
+        Write-Verbose "Here we go....."
         foreach ($computer in $computername){
             try {
-
-                Write-Verbose "______________________________"
-                Write-Verbose "Retrieving errors from $computer"
+                Write-Verbose "Retrieving errors from $computer $logname log"
                 get-eventlog -LogName $logname -ComputerName $Computername -Newest 20 -EntryType Error -Verbose
             } catch {
             }
