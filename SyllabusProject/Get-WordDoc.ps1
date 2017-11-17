@@ -21,10 +21,10 @@ Function Get-WordDoc {
     if (test-path $path) {
         $Word=NEW-Object –comobject Word.Application
         $Word.documents.open($path)
+        $Word.Visible = $true
     } 
     else {
         Write-Output "$path not found."
     }
     
 }
-$word.
