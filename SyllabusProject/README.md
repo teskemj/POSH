@@ -1,0 +1,1 @@
+#Working on a method to automate word document manipulation without messing with VBA

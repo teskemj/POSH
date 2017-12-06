@@ -1,2 +1,3 @@
 # POSH
-Random classroom demo files
+Migration to Git and Source control
+
