@@ -1,0 +1,5 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "PowerShell ISE",
+    "files.defaultLanguage": "powershell"
+}

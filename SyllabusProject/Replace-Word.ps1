@@ -7,16 +7,6 @@ $word.NewDocument | gm
 $word.NewDocument.add.('c:\scripts\test.docx')
 dir C:\Scripts
 
-Function Open-WordDoc {
-    [cmdletbinding()]
-    Param (
-        [parameter(Mandatory = $true)]
-        [string]$filename
-    )
-    $Word=NEW-Object –comobject Word.Application
-    Return $Word.documents.open($Filename)
-}
-
 Function SaveAsWordDoc($Document,$FileName)
 {
     $Syllabus.Saveas([REF]$Filename)
