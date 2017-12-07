@@ -33,6 +33,7 @@ Set-Service -Name PeerDistSvc -StartupType Disabled
 Set-Service -Name Browser -StartupType Disabled
 Set-Service -Name defragsvc -StartupType Disabled
 Set-Service -Name RetailDemo -StartupType Disabled
+#Hellow
 
 
 
