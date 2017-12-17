@@ -15,7 +15,7 @@ get-netadapter wi-fi | get-netipaddress | ft -AutoSize
 
 #Ping
 Test-NetConnection www.microsoft.com -InformationLevel Detailed
-Test-NetConnection www.microsoft.com | select -ExpandProperty pingreplydetails | ft address,status,roundtriptime
+Test-NetConnection www.microsoft.com | select -ExpandProperty pingreplydetails | ft address, status, roundtriptime
 1..10 | foreach { Test-NetConnection -computername www.microsoft.com -RemotePort 80 } | ft -AutoSize
 
 #NSLookup
@@ -38,6 +38,6 @@ test-netconnection outlook.com -traceroute | select -ExpandProperty traceroute |
 
 #Netstat-->awesome
 Get-NetTCPConnection
-Get-NetTCPConnection | group state,remoteport | sort count | ft count,name -AutoSize
+Get-NetTCPConnection | group state, remoteport | sort count | ft count, name -AutoSize
 Get-NetTCPConnection | where state -eq established | ft -AutoSize
-Get-NetTCPConnection | where state -eq established | where RemoteAddress -notlike 127* | foreach { $_;Resolve-DnsName $_.RemoteAddress -Type ptr -ErrorAction SilentlyContinue }
+Get-NetTCPConnection | where state -eq established | where RemoteAddress -notlike 127* | foreach { $_; Resolve-DnsName $_.RemoteAddress -Type ptr -ErrorAction SilentlyContinue }
