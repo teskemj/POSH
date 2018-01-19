@@ -14,7 +14,7 @@ Function Get-MonitorInfo {
     #>
     [CmdletBinding()]
     param(
-        [string[]]$computername
+        [string]$computername
     )
     $Monitor = Get-WMIObject wmiMonitorID -namespace root\wmi
     $Computer = Get-CimInstance -ClassName CIM_ComputerSystem -computername $computername
