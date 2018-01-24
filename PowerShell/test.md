@@ -13,3 +13,6 @@ We will output Markdown to:
 - PDF
 
 Link to [http://www.google.com/]Google
+
+
+* [Michael Teske](https://twitter.com/teskemj): [PowerShell Summit 2017-A Noobies Reflection](https://techsolutionswi.wordpress.com/2017/05/19/powershell-summit-2017-a-noobies-reflection/)
