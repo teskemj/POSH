@@ -1,0 +1,29 @@
+Name,Hero
+Jack Napier,Joker
+Diana Prince,Wonder Woman
+Bucky Barnes,Winter Soldier
+James Rhodes,War Machine
+Frank Castle,Punisher
+Rachel Roth,Raven
+Anna Marie,Rogue
+John Hancock,Hancock
+Victor von Doom, Doctor Doom
+Otto Octavious, Doctor Octopus
+Peter Parker, Spiderman
+Ben Grimm, THin
+Eric Brooks, Blade
+Scott Summers, Cyclops
+Ororo Munroe, Storm
+Remy LeBeau,Gambit
+Robert Drake, Iceman
+Henry McCoy, Beast
+Oswald Cobblepot, Penguin
+Clinton Barton, Hawkeye
+Natasha Romanoff, Black Widow
+Norrin Radd, Silver Surfer
+Thor Odinson, Thor
+Sam Wilson, Hawkeye
+Stephen Strange, Doctor Strange
+This Guy, The Fist
+Nice guy
+

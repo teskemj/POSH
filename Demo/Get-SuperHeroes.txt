@@ -1,0 +1,13 @@
+﻿# PowerShell Invoke-WebRequest Example
+$Site = "http://superherodb.com/characters"
+$Test = Invoke-WebRequest -URI $Site
+$Test.Links | Foreach {$_.href }
+#$heros=$test.links foreach {http://superherodc.com/characters/$_.href}
+$links=$test.links.href
+Foreach ($value in $links)
+{
+    $sChar=$site+$value
+    $lHeros=Invoke-WebRequest -uri $sChar
+    $sHero=$lheros.content | out-file c:\hero.txt -append
+}
+

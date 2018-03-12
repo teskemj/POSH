@@ -1,0 +1,27 @@
+dn,sAMAccountName,userPrincipalName,telephoneNumber,department,userAccountControl,objectClass
+"CN=Amie Baldwin,OU=Sales,DC=yourname,DC=local",amieb,amieb@yourname.local,555-1234,Accounting,512,user
+"CN=Scott Culp,OU=Sales,DC=yourname,DC=local",scottc,scottc@yourname.local,555-1236,Accounting,512,user
+"CN=Derek Graham,OU=Foreign Relations,DC=yourname,DC=local",derekg,derekg@yourname.local,555-1239,Foreign Relations,512,user
+"CN=Stephanie Bourne,OU=Sales,DC=yourname,DC=local",stephanieb,stephanieb@yourname.local,555-1239,Sales,512,user
+"CN=Matthew Dunn,OU=Executive,DC=yourname,DC=local",matthewd,matthewd@yourname.local,555-1230,Executive,512,user
+"CN=Sherri Hart,OU=Maintenance,DC=yourname,DC=local",sherrih,sherrih@yourname.local,555-1231,Maintenance,512,user
+"CN=Jay Jamieson,OU=Sales,DC=yourname,DC=local",jayj,jayj@yourname.local,555-1232,Sales,512,user
+"CN=Lani Ota,OU=Sales,DC=yourname,DC=local",lanio,lanio@yourname.local,555-1233,Sales,512,user
+"CN=Carolyn Seeley,OU=Accounting,DC=yourname,DC=local",carolyns,carolyns@yourname.local,555-4321,Accounting,512,user
+"CN=Robert Lyon,OU=Accounting,DC=yourname,DC=local",robertl,robertl@yourname.local,555-4322,Accounting,512,user
+"CN=Fidelma McGinn,OU=Accounting,DC=yourname,DC=local",fidelmam,fidelmam@yourname.local,555-4324,Accounting,512,user
+"CN=Michelle Votava,OU=IT,DC=yourname,DC=local",michellev,michellev@yourname.local,555-4325,IT,512,user
+"CN=Ray Sambroski,OU=IT,DC=yourname,DC=local",rays,rays@yourname.local,555-4326,IT,512,user
+"CN=Anne Paper,OU=IT,DC=yourname,DC=local",annepa,annepa@yourname.local,555-2234,IT,512,user
+"CN=Fukiko Ogisu,OU=Sales,DC=yourname,DC=local",fukikoog,fukikoog@yourname.local,555-2236,Sales,512,user
+"CN=James Smith,OU=Sales,DC=yourname,DC=local",jasmith,jasmith@yourname.local,555-2239,Sales,512,user
+"CN=Jan Miksovsky,OU=Security,DC=yourname,DC=local",janmi,Janmi@yourname.local,555-2239,Security,512,user
+"CN=Jon Morris,OU=Foreign Relations,DC=yourname,DC=local",jonm,jonm@yourname.local,555-2230,Foreign Relations,512,user
+"CN=Judy Lew,OU=Sales,DC=yourname,DC=local",judyl,judyl@yourname.local,555-2232,Sales,512,user
+"CN=Kim Yoshida,OU=Purchasing,DC=yourname,DC=local",kimyo,kimyo@yourname.local,555-2232,Purchasing,512,user
+"CN=Laurent Vernhes,OU=Purchasing,DC=yourname,DC=local",laurentve,Laurentve@yourname.local,555-2233,Purchasing,512,user
+"CN=Luis Bonifaz,OU=Executive,DC=yourname,DC=local",luisbo,Luisbo@yourname.local,555-4322,Executive,512,user
+"CN=Meng Phua,OU=Sales,DC=yourname,DC=local",mengph,mengph@yourname.local,555-4322,Sales,512,user
+"CN=Sandra Martinez,OU=Purchasing,DC=yourname,DC=local",smartinez,Smartinez@yourname.local,555-4324,Purchasing,512,user
+"CN=Stefan Knorr,OU=Sales,DC=yourname,DC=local",stefank,Stefank@yourname.local,555-4325,Sales,512,user
+"CN=Sunil Koduri,OU=Sales,DC=yourname,DC=local",sunilko,Sunilko@yourname.local,555-4326,Sales,512,user
