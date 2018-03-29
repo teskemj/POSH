@@ -1,23 +1,31 @@
-#Links
-https://winsysblog.com/
+## Links
 
-#PowerShell Direct
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct
+[Great PowerShell and Chocolatey blogs](https://winsysblog.com/)
+
+## PowerShell Direct
+
+<https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct>
 
 * Milk
 * Bread
-    * Wholegrain
+  * Wholegrain
 * Butter
 
 [Source of this MarkDown](https://guides.github.com/features/mastering-markdown/)
+
+## Emphasizing text
 
 *This text will be italic*
 
 _This will also be italic_
 
-***This text will be bold***
+**This text will be bold**
+
+This is not bold
 
 __This will also be bold__
+
+This is not bold
 
 ---
 
@@ -79,6 +87,8 @@ Content in the first column | Content in the second column
 
 - [ ] This is a checkbox
 - [x] This is item 2
+ 😄
+
 
 
 Name | Position
