@@ -1,0 +1,13 @@
+<h1 id="powershell">Powershell</h1>
+<h2 id="working-with-functions">Working with Functions</h2>
+<h3 id="truisms">Truisms</h3>
+<p><em>It is a truism that a script is never completed…there is always something else to add to a script-a change that will improve it or additional functionality that someone requests.</em></p>
+<p>Ed Wilson-PowerShell: Step-by-Step</p>
+<hr />
+<ul>
+<li>How can we create simple “scripts” that are easy to use and portable?</li>
+<li>For instance, a commonly used command that needs to be flexible and reusable without re-typing the entire command:</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode powershell"><code class="sourceCode powershell"><a class="sourceLine" id="cb1-1" data-line-number="1"></a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="fu">Get-WmiObject</span> -Class win32_operatingsystem –ComputerName DC1 |</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">    <span class="fu">Select-Object</span> buildnumber,caption,servicepackmajorversion</a></code></pre></div>
