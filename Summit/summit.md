@@ -23,6 +23,8 @@
 
 ## Bruce Payette
 
+* The History of PowerShell
+
 ## Lightning demos
 
 * Remote debugging (nothotdog)
