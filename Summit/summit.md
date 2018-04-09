@@ -1,4 +1,4 @@
-# Summit 2018 Keynot
+# Summit 2018 Keynote
 
 ## ITWorks-Techimpact
 
@@ -6,7 +6,7 @@
 * VMWare Code
 * April 29-May 2 PowerShell 2019
 
-# Snover
+## Snover
 
 [Jeffrey Moore](findthedumburl)
 
@@ -19,10 +19,17 @@
     * Embrace devops->go faster by doing smaller batches...stop bring an asshole!!
     * Automate
     * Excellence at automation means winning
-    
+* PowerShell v6
 
+## Bruce Payette
 
+## Lightning demos
 
-
-
-
+* Remote debugging (nothotdog)
+* Azure modules ported to core soon
+* JEA for Microsoft Security Fundamentals
+    * Project Honalulu
+* AzureRM module
+    * Azure.automation
+* PowerShell DSC
+    * No charge for State Configuration
