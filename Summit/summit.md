@@ -29,9 +29,35 @@
 
 * Remote debugging (nothotdog)
 * Azure modules ported to core soon
+* Open-FileEditor
 * JEA for Microsoft Security Fundamentals
     * Project Honalulu
 * AzureRM module
     * Azure.automation
 * PowerShell DSC
     * No charge for State Configuration
+* Find Markdown cmdlets in Docs
+
+## Session 1-Be The Master
+
+## Session 2-DSC versus the "Others"
+
+* DCS is tool, not a platform
+* Declarative configuration management using PowerShell
+
+## OpenSSH
+
+* Authentication is primary issue
+
+```bash
+ps --forest -x -p $(pidof sshd)
+```
+
+[Centinosystems](www.centinosystems.com/blog)
+
+* Something you have (key) and something you know (password)
+
+## To Do
+
+* Paar Git
+* OpenGraph
