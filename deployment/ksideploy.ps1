@@ -15,21 +15,6 @@
   Created: 2017-10-22
   Modified: 2018-12-14
 #>
-#http://lifeofageekadmin.com/how-to-uninstall-programs-using-powershell/
-Function Remove-HP {
-    
-    foreach ($program in $programs) {
-        $app = Get-WmiObject -Class Win32_Product | Where-Object {
-            $_.Name -match “*HP*”
-        }
-        if ($app -notlike "*HP Support Assistant") {
-            $app.Uninstall()
-        }
-        
-    }
-
-}
-
 
 Write-Verbose "Temporarily disable UAC"
 Disable-UAC
@@ -38,16 +23,11 @@ Write-Verbose "Configure Windows: Explorer Options"
 Set-WindowsExplorerOptions -EnableShowFileExtensions -EnableShowHiddenFilesFoldersDrives -EnableShowFullPathInTitleBar
 
 Write-Verbose "Configure Windows: Taskbar"
-Set-TaskbarOptions -Size Small -Dock Top -Combine Full -AlwaysShowIconsOn
-
+Set-TaskbarOptions -Size Small -Combine Full -AlwaysShowIconsOn
 
 Write-Verbose "Trust PSGallery"
 Get-PackageProvider -Name NuGet -ForceBootstrap
 Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-
-Write-Verbose "Installing Azure PowerShell modules"
-Install-Module -Name AzureRM -Scope AllUsers
-Install-Module -Name Azure -Scope AllUsers -AllowClobber
 
 Write-Verbose "Install SysInternals"
 choco upgrade sysinternals -y --cacheLocation "$env:temp\chocolatey"
@@ -55,8 +35,11 @@ choco upgrade sysinternals -y --cacheLocation "$env:temp\chocolatey"
 Write-Verbose "Install Google Chrome"
 choco upgrade googlechrome -y --cacheLocation "$env:temp\chocolatey"
 
+Write-Verbose "Install Adobe Reader"
+choco upgrade adobereader 2018.011.20063 -y --cacheLocation "$env:temp\chocolatey"
+
 write-verbose "Install Office365 ProPlus"
-choco upgrade Office365ProPlus -y --cacheLocation "$env:temp\chocolatey"
+choco upgrade Office365ProPlus 2016.20181114 -y --cacheLocation "$env:temp\chocolatey"
 
 Write-Verbose "Disable SMBv1"
 Disable-WindowsOptionalFeature -Online -FeatureName smb1protocol
