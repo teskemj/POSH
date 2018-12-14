@@ -15,6 +15,21 @@
   Created: 2017-10-22
   Modified: 2018-12-14
 #>
+#http://lifeofageekadmin.com/how-to-uninstall-programs-using-powershell/
+Function Remove-HP {
+    
+    foreach ($program in $programs) {
+        $app = Get-WmiObject -Class Win32_Product | Where-Object {
+            $_.Name -match “*HP*”
+        }
+        if ($app -notlike "*HP Support Assistant") {
+            $app.Uninstall()
+        }
+        
+    }
+
+}
+
 
 Write-Verbose "Temporarily disable UAC"
 Disable-UAC
