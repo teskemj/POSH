@@ -29,4 +29,6 @@ Function Remove-HP {
 
 } #End Function
 
+# Side note This installs boxstarter. Once installed. Insert the "raw" GIST link
+. { Invoke-WebRequest -useb http://boxstarter.org/bootstrapper.ps1 } | Invoke-Expression; get-boxstarter -Force
 Install-BoxstarterPackage -PackageName http://gist.github.com/teskemj/deployhp.ps1 -DisableReboots
