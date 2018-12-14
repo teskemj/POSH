@@ -38,6 +38,9 @@ choco upgrade googlechrome -y --cacheLocation "$env:temp\chocolatey"
 Write-Verbose "Install Adobe Reader"
 choco upgrade adobereader 2018.011.20063 -y --cacheLocation "$env:temp\chocolatey"
 
+Write-Verbose "Install HP Universal Print Driver"
+choco upgrade hp-universal-print-driver-pcl 6.6.5.23510 -y --cacheLocation "$env:temp\chocolatey"
+
 write-verbose "Install Office365 ProPlus"
 choco upgrade Office365ProPlus 2016.20181114 -y --cacheLocation "$env:temp\chocolatey"
 
