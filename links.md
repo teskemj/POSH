@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# Links
-https://winsysblog.com/
-
-## PowerShell Direct
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct
-=======
 ## Links
 
 [Great PowerShell and Chocolatey blogs](https://winsysblog.com/)
@@ -82,10 +75,10 @@ get-service | where {$_.enabled -eq $true}
 - [x] this is a complete item
 - [ ] this is an incomplete item
 
-First Header | Second Header
------------- | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
+| First Header                | Second Header                |
+| --------------------------- | ---------------------------- |
+| Content from cell 1         | Content from cell 2          |
+| Content in the first column | Content in the second column |
 
 1. This is my first item
 1. This is a secondline
@@ -98,10 +91,10 @@ Content in the first column | Content in the second column
 
 
 
-Name | Position
------|----------
-Teske|God of War
-Josie|God of poop
+| Name  | Position    |
+| ----- | ----------- |
+| Teske | God of War  |
+| Josie | God of poop |
 ---
 ```PowerShell
 Function Get-Names {
@@ -114,4 +107,4 @@ Function Get-Names {
 >>> This is s subsub-block
 
 
->>>>>>> 86a9d779b93f3969c8ad35e9b97094ce78087768
+[PowerShell Documentation](https://docs.microsoft.com/en-us/powershell/)
