@@ -37,5 +37,19 @@
 1. Press F8 to run all highlighted code. Don't worry, you won't break anything.
 1. Scroll the script to the # Housekeeping sections.
 1. Highlight the lines under # Housekeeping but above return to here after reboot.
-1. It will reboot and run updates. This may take a little time.
+1. It will reboot and run updates. This may take a little time, around 4 minutes
+1. Log in
+    1. Username: ksiadmin
+    1. Password: ksiP@ssword
+1. Open PowerShell ISE as administrator as instructed above
+1. Find the section ## Start here after reboot
+1. Place the cursor on the line as instructed. We are only running one line. This installs an opensource package to help with the installation of the remaining 
+1. Browse to https://gist.github.com/teskemj
+1. Select the bottom gist. deployhp.ps1
+1. You should see a button on the right at the top of the code box labeled RAW. Click it.
+1. Copy the URL (web address bar) and return to the PowerShell ISE screen.
+1. Scroll to the last line of code starting with 'install-boxstarterpackage -packagename.
+1. Replace the URL after Package name with the URL you just copied.
+1. Run that line of code. This will being the installation process of remaining software.
+1. 
 
