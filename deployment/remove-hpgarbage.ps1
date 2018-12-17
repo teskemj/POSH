@@ -62,4 +62,4 @@ rename-computer -NewName ksi-122018-5 -restart
 . { Invoke-WebRequest -useb http://boxstarter.org/bootstrapper.ps1 } | Invoke-Expression; get-boxstarter -Force
 
 # Make sure you replace the value (URL) after with the GIST RAW URL. This example "may" work. But if it doesn't replace with new RAW URL
-Install-BoxstarterPackage -PackageName https://gist.githubusercontent.com/teskemj/840e5df39bb105d643952a7a8e145c32/raw/e0d71c3d62badb31329729100c7d10aa1677dde5/deployhp.ps1 -DisableReboots
+Install-BoxstarterPackage -PackageName  -DisableReboots
