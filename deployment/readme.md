@@ -53,10 +53,10 @@
 1. Run that line of code. This will being the installation process of remaining software.
 1. Open PowerShell ISE as administrator. If not already there, open the script again and re-run the process to remove the HP software to remove residuals.
 1. It may reboot, if it does, log in and verify the following:
-    a. Is the people bar in the taskbar by the task menu
-    a. Is google chrome on desktop
-    a. Right click on Window button and select PowerShell (Administrative)
-    a. At the prompt, type hostname and press enter. Is the computername correct.
+    1. Is the people bar in the taskbar by the task menu
+    1. Is google chrome on desktop
+    1. Right click on Window button and select PowerShell (Administrative)
+    1. At the prompt, type hostname and press enter. Is the computername correct.
 1. Remember to document the computername to remember the next incremental number.
 1. Rebox PC and stage next PC.
 
