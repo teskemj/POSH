@@ -18,6 +18,7 @@ Function Remove-HP {
     
 
     # Retrieve all HP packages
+    # YOU'LL COME BACK HERE AFTER THE FINAL STEPS AND RERUN THIS TO CLEAN UP RESIDUALS
 
     $apps = get-package -name HP*
 
