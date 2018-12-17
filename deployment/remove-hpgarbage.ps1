@@ -56,7 +56,7 @@ rename-computer -NewName ksi-122018-5 -restart
 
 ## Start here after rebooot ##
 
-# Side note This installs boxstarter. Once installed. 
+# Side note This installs boxstarter.
 # place cursor on the following line and press F8
 
 . { Invoke-WebRequest -useb http://boxstarter.org/bootstrapper.ps1 } | Invoke-Expression; get-boxstarter -Force
