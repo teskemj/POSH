@@ -9,36 +9,36 @@ Modified: 2018-12-14
 
 #http://lifeofageekadmin.com/how-to-uninstall-programs-using-powershell/
 #>
-Function Remove-HP {
+#Function Remove-HP {
     
-    # Other packages are dependent on HP Device Support
+# Other packages are dependent on HP Device Support
 
-    uninstall-package -Name "HP Device Access Manager" -Force
+uninstall-package -Name "HP Device Access Manager" -Force
 
     
 
-    # Retrieve all HP packages
-    # YOU'LL COME BACK HERE AFTER THE FINAL STEPS AND RERUN THIS TO CLEAN UP RESIDUALS
+# Retrieve all HP packages
+# YOU'LL COME BACK HERE AFTER THE FINAL STEPS AND RERUN THIS TO CLEAN UP RESIDUALS
 
-    $apps = get-package -name HP*
+$apps = get-package -name HP*
 
 
 
-    # Process each app that isn't the HP Support Assistant. HPSA is convenient for updating drivers
+# Process each app that isn't the HP Support Assistant. HPSA is convenient for updating drivers
 
-    foreach ($app in $apps) {
+foreach ($app in $apps) {
 
-        if ($app.name -notlike "HP Support Assistant") {
+    if ($app.name -notlike "HP Support Assistant") {
 
-            $app.name
+        $app.name
 
-            Uninstall-Package $app.name -Force
+        Uninstall-Package $app.name -Force
 
-        } #End If
+    } #End If
 
-    } #End foreach
+} #End foreach
 
-} #End Function
+#} #End Function
 
 # Set script execution policy. If this isn't done, then the later process will fail.
 
