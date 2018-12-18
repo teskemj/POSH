@@ -9,7 +9,7 @@
     1. Lower left corner, select Offline Account
     1. Choose no when asked to sign in with MS account.
     1. Name = ksiadmin
-    1. Password = ksiP@ssword
+    1. Password = **********
     1. Security 1=First pets name=ksi
     1. Security 2=Name of city you were born=ksi
     1. Security 3=Childhood nickname=ksi
