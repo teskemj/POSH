@@ -40,7 +40,7 @@
 1. It will reboot and run updates. This may take a little time, around 4 minutes
 1. Log in
     1. Username: ksiadmin
-    1. Password: ksiP@ssword
+    1. Password: ************
 1. Open PowerShell ISE as administrator as instructed above
 1. Find the section ## Start here after reboot
 1. Place the cursor on the line as instructed. We are only running one line. This installs an opensource package to help with the installation of the remaining 
