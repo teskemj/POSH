@@ -10,9 +10,9 @@
     1. Choose no when asked to sign in with MS account.
     1. Name = ksiadmin
     1. Password = **********
-    1. Security 1=First pets name=ksi
-    1. Security 2=Name of city you were born=ksi
-    1. Security 3=Childhood nickname=ksi
+    1. Security 1=First pets name=***
+    1. Security 2=Name of city you were born=***
+    1. Security 3=Childhood nickname=***
 1. Cortana=No
 1. Turn off all privacy controls
 1. Click next under register and protect
