@@ -9,10 +9,10 @@
     1. Lower left corner, select Offline Account
     1. Choose no when asked to sign in with MS account.
     1. Name = ksiadmin
-    1. Password = ksiP@ssword
-    1. Security 1=First pets name=ksi
-    1. Security 2=Name of city you were born=ksi
-    1. Security 3=Childhood nickname=ksi
+    1. Password = **********
+    1. Security 1=First pets name=***
+    1. Security 2=Name of city you were born=***
+    1. Security 3=Childhood nickname=***
 1. Cortana=No
 1. Turn off all privacy controls
 1. Click next under register and protect
@@ -40,7 +40,7 @@
 1. It will reboot and run updates. This may take a little time, around 4 minutes
 1. Log in
     1. Username: ksiadmin
-    1. Password: ksiP@ssword
+    1. Password: ************
 1. Open PowerShell ISE as administrator as instructed above
 1. Find the section ## Start here after reboot
 1. Place the cursor on the line as instructed. We are only running one line. This installs an opensource package to help with the installation of the remaining 
