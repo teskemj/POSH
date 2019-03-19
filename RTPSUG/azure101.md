@@ -11,6 +11,8 @@
 [Azure Education/Imagine Academy](https://azureforeducation.microsoft.com/en-us)
 
 ### Pricing Help
+[Azure Free FAQ](https://azure.microsoft.com/en-us/free/free-account-faq/)
+
 [Azure Virtual Machine Pricing](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/windows/)
 
 [Azure Pricing Calculator](https://azure.microsoft.com/en-us/pricing/calculator/)
