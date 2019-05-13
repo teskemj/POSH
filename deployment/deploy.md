@@ -1,7 +1,8 @@
 # Desktop onsite deployment steps
 
 1. Join domain
-   - Click Start button and type PowerShell. Do not click to launch. Right click and choose Run As Administrator
+   - Click Start button and type PowerShell. Do not click to launch. 
+   - Right click and choose Run As Administrator
    - Type:
 
         ```powershell 
