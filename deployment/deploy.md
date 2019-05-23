@@ -35,3 +35,10 @@ ksi-w726
 ksi-w707
 ksi-w734
 ksi-w716->craigg ls-36
+
+
+### Reset Machines Computer Password on domain
+
+```powershell
+Reset-ComputerMachinePassword -Credential (Get-Credential)
+```
