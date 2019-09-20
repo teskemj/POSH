@@ -42,3 +42,5 @@ ksi-w716->craigg ls-36
 ```powershell
 Reset-ComputerMachinePassword -Credential (Get-Credential)
 ```
+
+local admin password is ksi P@ssword
