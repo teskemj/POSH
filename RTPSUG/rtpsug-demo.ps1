@@ -88,5 +88,5 @@ function Get-AZVMStatus {
 Portal
 
 
-# Clean up after yourself yah filthy animal
+# Clean up after yourself ya filthy animal
 Remove-AzResourceGroup -Name rtpsug-sat
