@@ -1,3 +1,6 @@
+# Anthony Nocentinos demo from Summit...This is great stuff!
+
+
 #Pull the PowerShell Core container images for this demo.
 docker pull mcr.microsoft.com/powershell:latest
 docker pull mcr.microsoft.com/powershell:6.2.0-ubuntu-18.04
