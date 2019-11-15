@@ -15,10 +15,7 @@ pwsh
 exit
 
 #Let's create a PowerShell Container, and attach to the terminal to get a shell
-docker run                   \
---name "pwsh-latest"  \
---interactive --tty   \
-mcr.microsoft.com/powershell:latest 
+docker run --name "pwsh-latest" --interactive --tty mcr.microsoft.com/powershell:latest
 
 #Run these inside the pwsh-lastest container.
 Get-Process
