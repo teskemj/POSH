@@ -17,3 +17,5 @@ docker pull mcr.microsoft.com/windowsservercore-insider
 ```
 [2019 Container Images | Thomas Maurer](https://www.thomasmaurer.ch/2018/11/windows-server-2019-container-images/)
 [Containers on Windows Documentation](https://docs.microsoft.com/en-us/virtualization/windowscontainers/)
+
+https://blog.sqlauthority.com/2019/09/29/how-to-download-the-latest-sql-server-docker-image-interview-question-of-the-week-244/
