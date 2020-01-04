@@ -103,3 +103,15 @@ docker ps -a
 #Clean up time
 docker ps -a | grep "powershell" | awk '{print $1}' | xargs docker rm
 docker volume rm PSScripts
+
+
+$sqlinstance1 = "localhost"
+Get-Process | select -Last 10 | Write-DbaDataTable -SqlInstance $sqlinstance1 -Database tempdb -Table processes -AutoCreateTable
+
+$stuff = 'This is an example of a string. It demonstrates "stuff".'
+
+$stuff -match 'example'
+$criteria = 'example', 'unique', 'test', 'a lot', 'of', 'entries'
+$stuff -match 'example|unique|test'
+
+$stuff -match ($criteria -join '|')
