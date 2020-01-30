@@ -2,7 +2,7 @@
 
 ## Azure Shell
 
-speculation contol module
+speculation control module
 
 invoke-azvmrun
 

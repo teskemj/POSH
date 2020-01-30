@@ -1,0 +1,1 @@
+Michael Teske is a life-long learner who enjoys helping others level up their career to achieve success. After spending more than 17 years in the classroom, Michael now creates content for Pluralsight focusing mostly in the Azure space. In his downtime, Michael can be found near his grills making BBQ and enjoying a Titos or walking his dog.

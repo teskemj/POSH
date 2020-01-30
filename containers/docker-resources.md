@@ -9,7 +9,10 @@
 docker pull mcr.microsoft.com/windowsservercore-insider
 
 ```
+```powershell 
+    docker run -e 'ACCEPT_EULA=Y' -e MSSQL_SA_PASSWORD='P@ssw0rd' --name 'sql1' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
 
+```    
 ``` powershell
 # Get list of images at mcr.microsoft.com
 (Invoke-Webrequest https://mcr.microsoft.com/v2/server/tags/list).content
@@ -17,5 +20,6 @@ docker pull mcr.microsoft.com/windowsservercore-insider
 ```
 [2019 Container Images | Thomas Maurer](https://www.thomasmaurer.ch/2018/11/windows-server-2019-container-images/)
 [Containers on Windows Documentation](https://docs.microsoft.com/en-us/virtualization/windowscontainers/)
+[Create a SQL Server on Linux Container with 5 lines of Code](https://www.mssqltips.com/sqlservertip/6007/create-a-sql-server-on-linux-container-with-5-lines-of-code/)
 
 https://blog.sqlauthority.com/2019/09/29/how-to-download-the-latest-sql-server-docker-image-interview-question-of-the-week-244/
