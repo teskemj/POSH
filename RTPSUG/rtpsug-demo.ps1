@@ -6,14 +6,15 @@ Get-AzVMSize -Location 'Central US'
 
 # Assign arguments
 $newvm = @{
-    ResourceGroupName   = "my-migrate"
-    Name                = "demo1"
+    ResourceGroupName   = "demo-rg"
+    Name                = "demo-3"
     Location            = "CentralUS"
-    VirtualNetworkName  = "target-vnet"
+    VirtualNetworkName  = "demo-vnet"
     SubnetName          = "default"
-    SecurityGroupName   = "demo1-nsg"
-    PublicIpAddressName = "demo1-ip"
+    SecurityGroupName   = "demo-1-nsg"
+    PublicIpAddressName = "demo-3-ip"
     OpenPorts           = 80, 3389
+    Size                = "Standard_B1ms"
 }
 
 # Create Demo3 
@@ -44,6 +45,7 @@ $newvm = @{
     SecurityGroupName   = "demo4-nsg"
     PublicIpAddressName = "demo4-ip"
     OpenPorts           = 80, 3389
+    Size                = "Standard_B1ms"
 }
 
 # Create Demo4

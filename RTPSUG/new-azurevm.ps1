@@ -11,12 +11,12 @@ Get-AzVMSize -Location 'Central US'
 
 New-AzVM `
     -ResourceGroupName "demo-rg" `
-    -Name "demo2" `
+    -Name "demo-3" `
     -Location "CentralUS" `
-    -VirtualNetworkName "demo1-vnet" `
+    -VirtualNetworkName "demo-vnet" `
     -SubnetName "default" `
-    -SecurityGroupName "demo1-nsg" `
-    -PublicIpAddressName "demo2-ip" `
+    -SecurityGroupName "demo-1-nsg" `
+    -PublicIpAddressName "demo-3-ip" `
     -OpenPorts 80, 3389
 
 $publicIP = Get-AzPublicIpAddress -ResourceGroupName "demo-rg" | Select-Object -ExpandProperty IpAddress
