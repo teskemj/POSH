@@ -17,6 +17,9 @@
 Write-Verbose "Temporarily disable UAC"
 Disable-UAC
 
+choco upgrade powershell-core -y
+choco install vscode 1.42.1 -y
+
 Write-Verbose "Install Fonts: SourceCodePro"
 choco upgrade sourcecodepro -y --cacheLocation "$env:temp\chocolatey"
 
@@ -120,7 +123,7 @@ choco upgrade googlechrome -y --cacheLocation "$env:temp\chocolatey"
 Write-Verbose "Install Cmder Mini"
 choco upgrade cmdermini -y --cacheLocation "$env:temp\chocolatey"
 mkdir C:\tools\cmdermini\config\
-invoke-webrequest -URI https://gist.githubusercontent.com/ian-noble/eab10f92c207c1deeb589cd135025d3c/raw/7134c2ffaa0461a145d12fad58acf5dd95164f40/ConEmu.xml -Outfile C:\tools\cmdermini\config\ConEmu.xml
+Invoke-WebRequest -URI https://gist.githubusercontent.com/ian-noble/eab10f92c207c1deeb589cd135025d3c/raw/7134c2ffaa0461a145d12fad58acf5dd95164f40/ConEmu.xml -Outfile C:\tools\cmdermini\config\ConEmu.xml
 
 Write-Verbose "Install Packer"
 choco upgrade packer -y --cacheLocation "$env:temp\chocolatey"
@@ -163,7 +166,7 @@ choco upgrade keypirinha -y --cacheLocation "$env:temp\chocolatey"
 keypirinha
 # --Download keypirinha user ini file
 Write-Verbose "Download Keypiranha user config"
-invoke-webrequest -URI https://gist.githubusercontent.com/ian-noble/6fbf1f40ca818ce74a38b6ac94823239/raw/98048be2f2db7dd22d9494d90fb85e996a29a80d/keypirinha.ini -Outfile $env:appdata\keypirinha\user\keypirinha.ini
+Invoke-WebRequest -URI https://gist.githubusercontent.com/ian-noble/6fbf1f40ca818ce74a38b6ac94823239/raw/98048be2f2db7dd22d9494d90fb85e996a29a80d/keypirinha.ini -Outfile $env:appdata\keypirinha\user\keypirinha.ini
 
 Write-Verbose "Install PuTTY"
 choco upgrade putty -y --cacheLocation "$env:temp\chocolatey"
@@ -258,14 +261,14 @@ Set-ItemProperty -Path "HKCU:\System\GameConfigStore" -Name GameDVR_Enabled -Typ
 
 Write-Verbose "Turn off People in Taskbar"
 If (-Not (Test-Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People")) {
-    New-Item -Path HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People | Out-Null
+  New-Item -Path HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People | Out-Null
 }
 Set-ItemProperty -Path "HKCU:SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced\People" -Name PeopleBand -Type DWord -Value 0
 
 Write-Verbose "Install NuGet Package Explorer"
 choco upgrade nugetpackageexplorer
-if (test-path (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk")) {
-    Move-Item (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk") (Join-Path ([Environment]::GetEnvironmentVariable("AppData")) "Microsoft\Windows\Start Menu\Programs\NugetPackageExplorer.lnk")
+if (Test-Path (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk")) {
+  Move-Item (Join-Path ([Environment]::GetFolderPath("Desktop")) "NugetPackageExplorer.exe.lnk") (Join-Path ([Environment]::GetEnvironmentVariable("AppData")) "Microsoft\Windows\Start Menu\Programs\NugetPackageExplorer.lnk")
 }
 
 Write-Verbose "Restore UAC"

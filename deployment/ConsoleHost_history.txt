@@ -1,0 +1,3582 @@
+ping tsw-1
+net use * \\tsw-1\isos
+z:
+ls
+4196*2
+choco search vscode
+choco install vscode 1.25.1
+hostname
+rename-computer PS2-MJ
+find-module vmw*
+help install-module -full
+update-help -ErrorAction SilentlyContinue -Force
+help install-module -full
+get-help install-module -full
+find-module vmw*
+install-module vmware.powercli
+get-date
+get-date -Date "may 21, 2018"
+get-date -Date "may 21, 2018" - get-
+(get-date -Date "may 21, 2018") - get-date(today)
+(get-date -Date "may 21, 2018") - get-date
+get-date.adddays(get-date -Date "may 21, 2018")
+get-date.addays(get-date -Date "may 21, 2018")
+(get-date).addays(get-date -Date "may 21, 2018")0
+(get-date).addays(get-date -Date "may 21, 2018")
+(get-date).adddays(get-date -Date "may 21, 2018")
+Connect-VIServer -Server 192.168.174.243
+Set-PowerCLIConfiguration -InvalidCertificateAction Ignore
+Connect-VIServer -Server 192.168.174.243
+Connect-VIServer -Server 192.168.174.243
+cls
+gcm *snapshot*
+help new-snapshot
+get-vm
+get-vm | new-snapshot
+gcm *ovf*
+Get-NetAdapter | Where-Object Status -EQ 'Up' | Format-Table -AutoSize
+choco
+choco upgrate
+choco --upgrade
+cls
+get-vm dc1
+get-vm dc1 | start-vm
+cd C:\Users\micha\OneDrive\_Git\
+git ?
+git --help
+git config --global user.email "michael.teske@outlook.com"
+get config --global user.name "teskemj"
+git config --global user.name "teskemj"
+git clone https://github.com/teskemj/AzureDocs
+git --help
+get-vm
+Set-PowerCLIConfiguration -ParticipateInCeip $false
+Connect-VIServer 192.168.174.243
+Connect-VIServer -server 192.168.174.243
+get-vm
+get-vm | start-vm
+cls
+get-vm
+Connect-VIServer -Server 192.168.174.243
+get-vm
+get-vm | start-vm
+sl env:
+ls
+sl $userprofile
+sl $env:USERPROFILE
+sl $env:USERPROFILE\dropbox
+sl 'C:\Users\micha\Dropbox (Personal)\'
+ls
+sl 'C:\Users\micha\Dropbox (Personal)\'
+sl .\_Pluralsight\Migration\Assessment\
+ls
+ren .\Module-1\ Module-1-2
+md .\Module-4
+md .\Module-5
+md .\Module-6
+gcm get-rm*
+gcm -Module az*
+gcm -module azurerm
+gcm *azure*
+import-module azurerm
+find-module azure*
+find-module azurerm
+find-module azurerm.*
+install-module azurerm
+gcm *azure*
+gcm *migrate*
+gcm *migrat*
+gcm -Source azurerm.datamigration
+cls
+cd \
+ls
+cd .\ISOs\
+ls
+Get-FileHash *.ova -Algorithm SHA1
+ipconfig
+ipconfig /all
+ping vc1
+Get-ChildItem -Recurse filespec | Select-String pattern | Select-Object -Unique Path
+"cleanhistory.txt" | out-file thisisatest.txt
+Get-ChildItem -Recurse *.txt | Select-String "clea*" | Select-Object -Unique Path
+Get-ChildItem -Recurse *.ps1 | Select-String "clea*" | Select-Object -Unique Path
+cd \
+cd .\Users\micha\
+Get-ChildItem -Recurse *.ps1 | Select-String "clea*" | Select-Object -Unique Path
+Get-ChildItem -Recurse *.ps1 | Select-String "cleanhistory.txt" | Select-Object -Unique Path
+openssh
+open-ssh
+sshe
+ssh
+ssh -l web1 -L 192.168.174.172
+ssh -l web1 -L 192.168.174.171
+ssh -l web1 192.168.174.171
+1/16
+1/16 * 86000
+clear
+get-vm
+Connect-VIServer
+get-vm
+get-vm | start-vm
+gcm *snapshot*
+get-vm
+get-vm | where $_.name -like '*1'
+get-vm | select name
+get-vm | where {$_.name -contains '1'}
+get-vm | where {$_.name -contains '*1'}
+get-vm | where {$_.name -eq 'app1'}
+get-vm | where {$_.name -like '1'}
+get-vm | where {$_.name -like '*1'}
+get-vm | where {$_.name -like '*1'} | new-snapshot -Description "pre-agent install"
+ssh -l web1 -L 192.168.174.171
+ssh -l web1 192.168.174.171
+gcm -Module sql*
+$startDate = "05/21/2018"
+$endDate = get-date
+New-TimeSpan -Start $startDate -end $endDate
+cd\
+cd .\Users\micha\OneDrive\_Git\posh\Date\
+(h).CommandLine | out-file .\get-daysworked.ps1
+(get-date).AddDays(11)
+(get-date).AddDays(11).DayOfWeek
+get-date 5/13/2000
+get-date 2/12/1972
+get-date 2/13/1972
+get-date 12/7/1940
+get-date 12/7/1941
+get-process
+get-process chrome
+get-process chrome | stop-process
+get-process ex*
+get-process exc* | stop-process
+get-process
+gip
+e:
+certutil
+cd .\Downloads\
+certutil -filehash .\AzureMigrate_1_0_9_8.ova SHA256
+certutil -hashFILE .\AzureMigrate_1_0_9_8.ova SHA256
+28+16+35
+Get-LocalUser
+new-localuser -Name Sup -Password (ConvertTo-SecureString -String P@ss -AsPlainText -Force)
+new-localuser -Name Sup -Password (ConvertTo-SecureString -String P@ss -AsPlainText -Force)
+hostname
+cd $userprofile
+sl $env
+ls $env:
+cls
+ls env:
+cd
+cls
+cd $userprofile
+cd userprofile
+cd $env:USERPROFILE
+cd '.\Dropbox (Personal)\'
+ls
+cd cls
+cls
+cd .\_Pluralsight\Migration\Assessment\Module-3\
+ls
+ls module*.mp4
+ren module*.mp4 m001-m3*.mp4
+ls module*.mp4
+cd backup
+ise
+cd..
+rn
+ren .\module-3-0.mp4 m002-m2-01.*
+ren module-3-0.mp4 m002-m2-01.*
+help ren
+help ren -full
+cd .\Backup\
+gci | rename-Item -NewName { $_.name -Replace 'module-3','m001-m3' }
+ls
+gci *demo*.mp4
+gci *demos*.mp4 | rename-Item -NewName { $_.name -replace 'supdated','' }
+ls
+cd\
+cd ov
+ls ov
+d:
+dir
+e:
+dir
+get-process chrome
+get-process chrome | stop-process
+get-process slack
+get-process slack | stop-process
+cd 'C:\Users\micha\Dropbox (Personal)\_Pluralsight\Migration\Assessment\Module-4\'
+ls
+cd .\module-4-demos\
+ls
+cd\
+cls
+help stop-vm -full
+gcm shutdown*
+help shutdown-vmguest -full
+ssh -l web1 192.168.174.171
+ssh -l web1 192.168.174.171
+d:
+ls
+f:
+ls
+e:
+ls
+cd ova
+cls
+ls
+Get-FileHash .\InstallDependencyAgent-Windows.exe -Algorithm SHA256
+get-vm
+help shutdown-vmguest -full
+ssh -l web1 192.168.174.171
+ssh -l web1 192.168.174.171
+244+114
+ping app2
+get-process chrome*
+get-process chrome* | stop-process
+ssh -l web1 192.168.174.171
+get-process chrome
+get-process chrome | stop-process
+[System.Math]::Abs(-5)
+ping app2
+ping app1
+ping app2
+(get-process chrome).count
+ssh -l web1 192.168.174.171
+(get-process chrome).count
+(get-process microsoftEdg*).count
+2048*3
+ping google.com -t
+get-process slack*
+get-process slack* | stop-process -Verbose -force
+get-process chrome*
+get-process chrome* | stop-process
+find-module *sql*
+gcm -Module *sql*
+Get-CimInstance Win32_Processor | select *
+6*122
+20*6
+732+120
+122*2
+244*6
+1464+120
+ipconfig
+ipconfig
+ipconfig
+ipconfig /release
+ipconfig /renew
+ipconfig
+ipconfig
+ipconfig
+pin ggoogle.com
+cls
+ping google.cmo
+ping google.com
+ping google.com
+ipconfig
+ipconfig
+ipconfig
+ipconfig
+ipconfig
+cls
+ipconfig
+ipconfig
+ipconfig
+cls
+ipconfig
+ping google.com
+ipconfig
+ipconfig /renew
+ipconfig /all
+ipconfig /all
+ipconfig
+84/12
+(Invoke-RestMethod "http://data.alexa.com/data?cli=10&dat=s&url=RidiCurious.com").alexa.sd[1].Reach.Rank
+(Invoke-RestMethod "http://data.alexa.com/data?cli=10&dat=s&url=RidiCurious.com").alexa.sd[1].Popularity.Text
+ping 192.168.174.6
+nslookup
+ipconfig /release
+ipconfig
+cls
+ipconfig /renew
+ping google.com
+ipconfig /all
+cls
+ipconfig /renew
+ipconfig /release
+cls
+ipconfig /renew
+ping google.com
+ping google.com
+ping google.com
+ipconfig
+cls
+ipconfig /release
+cls
+ipconfig /renew
+ipconfig /renew
+ping google.com
+exit
+ping 8.8.8.8
+ping google.com
+cls
+ssh 192.168.174.1 -l ubnt
+Get-AzureRmVirtualNetworkGatewayConnection -name "S2SConnection" -ResourceGroupName 'ps-migrate-rg'
+ssh 192.168.174.1 -l ubnt
+import-module sqlserver
+get-module -name sqlserver
+gcm -module sqlserver
+import-module sqlserver
+get-module -name SqlServer
+install-module sqlserver
+cls
+ise
+ping 10.3.0.4
+ping 10.3.0.4
+ping 104.42.169.169
+connect-azurermaccount
+install-module -name azurerm -verbose -force
+cls
+SSH 104.42.37.43
+ping 104.42.37.43
+ping 10.3.0.5
+ping 10.3.0.5
+get-process microsofted*
+get-process microsofted* | stop-process
+ping 10.3.0.5
+ping 10.3.0.5 -t
+ssh 192.168.174.1 
+ssh 192.168.174.1 -l ubnt
+ping 10.3.0.6
+Get-AzureRmVirtualNetworkGatewayConnection -Name "IPsecER" -ResourceGroupName "ps-migrate-rg"
+Get-AzureRmVirtualNetworkGatewayConnection -Name "s2sconnection" -ResourceGroupName "ps-migrate-rg"
+Get-AzureRmVirtualNetworkGatewayConnection -Name "s2sconnection" -ResourceGroupName "ps-migrate-rg"
+ssh 192.168.174.1 -l ubnt
+P@ssw0rd
+ssh 192.168.174.1 -l ubnt
+cls
+ping 10.3.0.5
+ping 192.168.174.181
+cls
+cd\
+sqlcmd -S 192.168.175.181\SampleDB -U sa -P P@ssw0rd
+gcm *calendar*
+install-module -name azurerm -verbose -force
+get-help about_if
+find-module msonline
+import-module msonline
+install-module msonline
+ cls
+cd\
+$secure=ConvertTo-SecureString -String KSIP@ssw0rd -AsPlainText -force
+$secure
+GET-HELP about_parameters
+cls
+get-help about_advancedfunctions
+get-help about_functions
+get-help about_functionscls
+cls
+get-help about_Functions_Advanced
+get-process chrome*
+get-process microsof*
+get-process microsof* | stop-process
+get-process chr*
+ipconfig /all
+nslookup
+Get-NetworkAdapter
+Get-NetAdapterStatistics
+get-netadapter
+ipconfig
+cd\
+cls
+prompt "this"
+cls
+ping 10.2.0.4
+ping 10.2.0.4 -t
+cls
+123-15
+108-7
+71-9
+101/11
+123/13
+121/12
+ssh 192.168.174.1 -l ubnt
+ping app2
+ lx
+cls
+ping 10.3.0.5
+Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server' -Name fDenyTSConnections
+$rdp=Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server' -Name fDenyTSConnections
+$rdp
+$rdp.fDenyTSConnections
+cls
+$rdp=(Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server').fDenyTSConnections
+$rdp
+if ($rdp -eq '1') {}
+cd\
+help invoke-command
+dotnet build
+nuget restore
+dotnet restore
+cmd
+cd .\dotnet-sqldb-tutorial-master\
+ls
+cd .\dotnet-sqldb-tutorial-master\
+ls
+dotnet restore .\DotNetAppSqlDb.sln
+ipconfig
+CREATE TABLE [dbo].[Movie] (`
+    [ID]          INT             IDENTITY (1, 1) NOT NULL,`
+    [Title]       NVARCHAR (MAX)  NULL,`
+    [ReleaseDate] DATETIME2 (7)   NOT NULL,`
+    [Genre]       NVARCHAR (MAX)  NULL,`
+    [Price]       DECIMAL (18, 2) NOT NULL,`
+    CONSTRAINT [PK_Movie] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+cd $env:USERNAME
+cd $env:ProgramW6432
+ls env:
+cd 'C:\Users\micha\Dropbox (Personal)\'
+ls
+cd .\_Pluralsight\
+cd .\Migration\
+cd .\Refactor\
+help about_For
+for ($i=0;$i -le 5;$i++) {write-host $i}
+for ($i=1;$i -le 5;$i++) {write-host $i}
+for ($i=1;$i -le 5;$i++) {new-item -Name Mod$i -ItemType Directory}
+ls
+cd columns
+ls
+gcm *sql*
+gcm *sql* -verb get
+exit
+3:04 - 1:51
+get-date select *| gm
+get-date | select * | gm
+get-date.(timeofday)
+get-date.timeofday
+(get-date).timeofday
+(get-date).datetime
+hostname
+get-command *azure*
+cls
+gcm -verb connect
+Connect-AzureRmAccount
+New-AzureRmResource -name myAppPlanGroup -location 'North Central US'
+New-AzureRmResource -Name myAppPlanGroup -location 'North Central US'
+help New-AzureRmResourceGroup
+New-AzureRmResource -Name psAppPlanGroup -location 'North Central US'
+New-AzureRmResource -Name psAppPlanGroup -location 'Central US'
+New-AzureRmResourceGroup -Name psAppPlanGroup -location 'Central US'
+New-AzureRmAppServicePlan -Name mywebapp -Location 'Central US' -ResourceGroupName psAppPlanGroup -Tier Free
+$gitrepo="https://github.com/Azure-Samples/app-service-web-dotnet-get-started.git"
+$location = 'central us'
+2030-2018
+46+12
+46-33
+ipconfig
+cls
+Set-NetFirewallProfile -Profile * -Enabled False
+Set-NetFirewallProfile -Profile * -Enabled true
+Set-NetFirewallProfile -Profile * -Enabled False
+ipconfig
+gcl
+clear
+get-service *sql*
+get-service *sqlbro*
+get-service *sqlbro* | start-service
+get-service *sqla* | start-service
+cls
+services.msc
+netstat -aon
+cls
+get-service sql*
+get-service *sql*
+restart-service mssql*
+netstat -aon
+Set-NetFirewallProfile -Profile * -Enabled False
+cd\
+cls
+Set-NetFirewallProfile -Profile * -Enabled true
+get-process
+get-process scr*
+get-process scr* | stop-process
+get-process scr*
+find-module *excel*
+import-module excelcmdlets
+install-module excelmdlets
+get-psrepository
+install-module excelcmdlets
+gcm -Module ExcelCmdlets
+find-module *excel*
+gcm -Noun module
+get-module importexcel
+install-module importexcel
+gcm -Module ImportExcel
+get-service | export-excel -now
+cd\
+md temp
+get-process | export-excel c:\temp\process.xlsx
+C:\temp\process.xlsx
+install=module importexcel
+cd\
+get-process s*
+cls
+get-process scree*
+get-process scree* | stop-process
+start screensketch
+screensketch
+start-process screensketch
+cls
+$function:prompt
+get-process scree* | stop-process
+cls
+gcm *encode*
+gcm *code*
+gcm *base*&
+gcm *base*
+help *base64*
+update-help
+cd temp
+ls
+cp *.wri *.txt
+ren *.wri *.txt
+ren .\techSupport_4EB770_11-27.wri *.txt
+help ren
+help ren -examples
+ cd \temp
+ls
+(get-content .\techSupport_4EB770_11-27.txt) -replace \&,`n |out-file readable.txt
+git
+git clone https://github.com/adam-p/markdown-here.wiki.git
+ls
+get-process scree* | stop-process
+ii c:\temp
+start c:\temp
+ipconfig
+netstat -aon
+cls
+cd\
+gci *chromium* -r
+sl hklu:
+get-psprovider
+sl hkcu:
+ls
+gci *chromium* -r
+cd software
+ls
+cd chromium
+ls
+exit
+cd\
+get-process chrome*
+get-process chrome* | gm
+get-process chrome* | select *
+get-proces cam*
+get-process cam*
+ssh 192.168.174.1
+ssh /?
+ssh
+ssh 192.168.174.1 -l ubnt
+ping google.com -t
+install-module microsoftteams
+install-module sqlserver
+$mystring = 'data={0}' -f $servername
+$mystring
+$servername='SQL1'
+$mystring = 'data={0}' -f $servername
+$mystring
+cd .#
+cd.#
+cls
+ping 1.1.1.1
+gcm *disable*
+gcm *taskbar*
+invoke-webrequest -Uri https://chocolatey.org/install.ps1 -OutFile c:\choco.ps1
+c:
+cd\
+dir
+.
+.\choco.ps1
+choco /?
+choco search office365*
+choco search *office*
+cls
+cinst boxstarter
+cinst boxstarter -y
+cinst boxstarter -y --force
+gcm *uac*
+disable-uac
+exit
+Install-BoxstarterPackage
+boxstartershell
+find-module boxstarter
+get-psrepository
+import-module boxstarter.chocolatey
+gcm *uac*
+get-command -module PackageManagement
+Register-PackageSource -name Chocolatey -ProviderName Chocolatey -Location http://chocolatey.org/api/v2
+Get-PackageSource
+get-packageprovider
+find-package -source chocolatey -name *zip*
+(get-history).CommandLine | package.ps1
+(get-history).CommandLine | out-file package.ps1
+get-psrepository
+find-module -name psscriptanalyzer
+find-module -name psscriptanalyzer | save-module -path c:\powershell -force
+dir powershell
+(get-history).CommandLine | out-file package2.ps1
+cls
+cd $env:USERPROFILE
+cd .\OneDrive\_Git\
+gci *.ps1 | Group-Object DirectoryName
+choco search office*
+choco search adobe
+choco search screen*
+choco search HP universal
+cls
+choco search office365
+gcm -module Boxstarter.Chocolatey
+gcm -module BoxStarter.WinConfig
+az
+install-module az
+help az
+az
+uninstall-azurerm
+exit
+connect-azaccount
+gcm -noun az*
+gcm -verb get -noun az*
+get-azaduser 
+get-azresourcegroup
+get-azresourcegroup | select ResourceGroupName,location
+get-azresourcegroup | select ResourceGroupName,location | group location
+cls
+gcm -noun az*
+get-azresourcegroup | select ResourceGroupName,location | group location
+gcm get-azre*
+get-azresource
+get-azresource | select name,ResourceType,Location
+gcm -module msonline
+Find-Module msonline
+import-module msonline
+install-module msonline
+install-module azuread -force
+connect-azuread
+Connect-MsolService
+import-module msonline -force
+install-module msonline -force
+update-module msonline -force
+update-module msonline -force -MaximumVersion -Verbose
+install-module msonline -force -AllowClobber
+install-module azuread
+install-module msonline -force
+Connect-MsolService
+gcm -module msonline
+get-msoluser
+(get-msoluser).count
+$PSVersionTable.PSVersion
+cls
+docker
+choco install hugo -confirm
+hugo version
+cd C:\Users\micha\OneDrive\_Git\
+ls
+ls bl*
+start https://themes.gohugo.io
+hugo new site blog
+rd blog
+hugo new site blog
+cd blog
+git clone https://github.com/tazeg/hugo-blog-jeffprod.git themes/jeffprod
+hugo server
+cd C:\Users\micha\OneDrive\_Git\blog\
+hugo new post/my-first-post.md
+hugo render
+hugo
+hugo server
+hugo /?
+hugo --help
+hugo server --help
+get-process hug*
+get-process
+hugo new --help
+cd .\OneDrive\_Git\blog\
+hugo new site blog
+git submodule add https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+ls
+cp -r .\themes\hello-friend\exampleSite\* .
+ls
+cd ..
+hugo new site blog
+cd blog
+ls
+git clone https://github.com/panr/hugo-theme-hello-friend.git themes/hello-friend
+cp -r themes/hello-friend/examplesite/* .
+cp -r .\themes\hello-friend\exampleSite\* .
+cp -r .\themes\hello-friend\exampleSite\*.
+ls
+rm .\archetypes\default.md
+hugo server
+ls
+ls public*
+ls public* -r
+git submodule git@github.com:teskemj/teskemj.github.io.git public
+git submodule git@github.com:teskemj/teskemj.github.io public
+git submodule https://github.com/teskemj/teskemj.github.io.git public
+git clone https://github.com/teskemj/teskemj.github.io.git public
+ls public
+hugo server
+cd C:\users\micha\OneDrive\_Git\
+cd .\blog\
+ls
+cd .\public\
+ls
+cd ..
+cd content
+ls
+cd post
+ls
+type hello.md
+cd ..
+cd
+cd blog
+cd .\OneDrive\_Git\blog\
+ls public
+git clone https://github.com/teskemj/teskemj.github.io.git content
+rm content
+git clone https://github.com/teskemj/teskemj.github.io.git content
+hugo server
+'something\' -match '\\$'
+'booger' -match \r$
+'booger' -match '\r$'
+'booger' -match 'r\$'
+'booger' -match 'r$'
+'booger' -match 'er$'
+'booger' -match 'etr$'
+'booger' -like 'etr$'
+'booger' -like 'et$'
+'booger' -like 'e$'
+'booger' -like 'r$'
+'booger' -match 'er$'
+'booger' -like 'booger$'
+'booger' -like 'booger'
+'booger' -like 'r'
+'booger' -match 'r'
+'booger' -match 'oo'
+'booger' -match 'o0'
+'booger' -match '^b'
+'booger' -match 'b^'
+'booger' -match '^B'
+'booger' -cmatch '^B'
+gcm *string*
+help about_string
+help about_string*
+help about_*
+update-help
+help about_Regular_Expressions
+ls
+cd ..
+cd blog 
+del *.*
+ls
+cd..
+hugo new site blog
+cd blog
+ls
+git clone https://github.com/Tazeg/hugo-blog-jeffprod.git themes/jeffprod
+ls
+cd content
+ls
+cd
+cd .\OneDrive\_Git\blog\
+hugo new post/my-firstpost.md
+cd .\content\
+ls
+cd .\post\
+ls
+hugo server
+cd ..
+ls
+cd .\content\
+ls
+cd .\post\
+ls
+cd ..
+hugo server
+  hugo
+hugo
+git add .
+?
+echo -e "\033[0;32mDeploying UPdates to Github...\033[0m"
+git submodule git@github.com:{teskemj}/{teskemj}.github.io.git public
+git submodule git@github.com:teskemj/teskemj.github.io.git public
+git submodule https://github.com/teskemj/teskemj.github.io.git public
+hugo
+cd .\public\
+git add .
+git commit -m 'publishing my intitial GitHub pages site'
+git push
+hugo new post/enter-2019-with-a-bang.md
+cd ..
+hugo new post/enter-2019-with-a-bang.md
+hugo
+cd public
+git add .
+git commit -m 'publishing my intitial GitHub pages site'
+git push
+hugo
+$profile | select *
+gcm -Module Az.*
+gcm get-rm*
+gcm connect-az*
+Connect-AzAccount
+Get-AzResource
+Get-AzResource select name
+Get-AzResource | select name
+Get-AzResource | select name,location
+Get-AzResource | select test
+Get-AzResource | where $_.name -like 'test'
+Get-AzResource | where {$_.name -like 'test'}
+gcm remove-az*
+gcm remove-azr
+gcm remove-azr*
+gcm remove-azresource
+Get-AzResource | where {$_.name -like 'test'} | remove-azresource -whatif
+help new-azwebapp -full
+Get-AzVMImageSku -Location "eastus" -PublisherName 
+Get-AzVMImageSku -Location "eastus" -PublisherName "microsoftwindowsserver" -offer "windowsserver"
+get-help new-azvm
+get-help new-azvm -full
+$message = 'hi, my name is dave'
+$message -match 'Dave'
+$message -cmatch 'Dave'
+'123-45-6789' -match '\d\d\d-\d\d\-\d\d\d\'
+'123-45-6789' -match '\d\d\d-\d\d\-\d\d\d\d'
+install-module pswordcloud
+c:\
+cd \
+ls
+cd temp
+get-clipboard
+cd \temp
+get-clipboard | new-wordcloud -path .\wordcloud.png -fontfamily georgia
+install-module pswordcloud
+get-clipboard | new-wordcloud -path .\wordcloud.png -fontfamily georgia
+get-content .\sup.txt | new-wordcloud -path .\wordcloud1.png -imagesize 1080p
+get-content .\words.txt | new-wordcloud -path .\wordcloud1.png -imagesize 1080p
+get-content .\words.txt | new-wordcloud -path .\wordcloud2.png -imagesize 1080p
+(get-content .\StopWords.txt).count
+get-help new-wordcloud -full
+choco install 7zip -y
+choco search powershell
+choco search powershell-core
+pwsh
+exit
+clear
+get-help mount
+cd\
+g:
+c:
+convert /?
+convert g: /fs:ntfs
+gcm *format*
+get-volume
+help format-volume
+format-volume -DriveLetter g: -FileSystem NTFS -whatif
+format-volume -DriveLetter g -FileSystem NTFS -whatif
+get-volume
+exit
+date
+ssh 192.168.174.147
+ssh -l mj 192.168.174.147
+bash
+get-alias get-content
+help get-alias
+get-alias
+help get-alias -full
+get-alias -definition get-content
+cls
+bash
+Get-WindowsOptionalFeature
+Get-WindowsOptionalFeature -FeatureName microsoft*
+Get-WindowsOptionalFeature -FeatureName *microsoft*
+Get-WindowsOptionalFeature -FeatureName microsoft-windows-subsystem-linux
+Get-WindowsOptionalFeature -FeatureName *
+clear
+help Get-WindowsOptionalFeature
+help Get-WindowsOptionalFeature -full
+Get-WindowsOptionalFeature -FeatureName micro* -online
+Enable-WindowsOptionalFeature -FeatureName microsoft-windows-subsystem-linux -online
+ssh -l mj 192.168.174.147
+get-module -Name *azure*
+get-module -Name *az*
+find-module -name *azure*
+cls
+gcm -Module *azure*
+clear
+get-module az*
+find-module az.*
+find-module azrm*
+find-module azurerm*.
+find-module azurerm*
+get-module -ListAvailable
+Remove-Module azurerm.*
+ls
+get-module -ListAvailable
+get-module -Name azurerm.*
+get-module -Name azurerm
+gcm -Name module
+update-help
+gcm -noun module
+get-module
+get-module AzureRm
+get-module AzureRm*
+get-module -ListAvailable
+cls
+Get-AzureRmADGroup
+gcm -verb get -noun azurerm*
+remove-module azurerm
+exit
+remove-module azurerm
+get-module azurerm
+getj-module azurerm
+exit
+get-module -listavailable
+Uninstall-Module azurerm
+get-module -listavailable
+cls
+uninstall-module azurerm -AllVersions -Force
+get-module -listavailable
+cls
+get-module -ListAvailable | where{$_.name -like 'azurerm'}
+get-module -ListAvailable | where{$_.name -like 'azurerm*'}
+get-module -ListAvailable | where{$_.name -like 'azurerm*'} | Uninstall-Module -Verbose -Force -AllVersions
+get-host
+choco
+choco search pwsh
+choco upgrade powershell-core -y
+exit
+choco upgrade powershell-core -y
+get-module -ListAvailable | where{$_.name -like 'azurerm*'}
+exit
+pwsh
+exit
+exit
+get-module -ListAvailable | where $_.name -like 'az*'
+get-module -ListAvailable | where {$_.name -like 'az*'}
+cd\
+find-module -Name az.*
+find-module -Name az
+install-module -Name az -Verbose -AllowClobber -Force
+cls
+get-module -Name az*
+get-module -Name az.*
+get-module -ListAvailable | where {$_.name -like 'az*'}
+gcm -Noun azac*
+login-azaccount
+help login-azaccount -full
+update-help -force -Verbose
+update-help -Verbose -force
+Get-AzResource
+cls
+get-azresourc
+Get-AzResource
+Get-AzResource | where {$_.name -like 'rt*'}
+Get-AzResource | where {$_.resourcegroupname -like 'rt*'}
+Get-AzResourcegroup | select name
+Get-AzResourcegroup
+exit
+cd\
+cls
+get-azresourcegroup | select ResourceGroupName,Location
+clear
+Get-AzADApplication -DisplayNameStartWith tes*
+Get-AzADApplication -DisplayNameStartWith 'teske'
+get-azaccount
+gcm -noun *account*
+cls
+gcm -verb get -noun *account*
+get-msolaccountsku
+Get-MsolAccountSku
+clear
+gcm -verb get -noun login
+gcm -verb get -noun *login*
+gcm -verb connect
+gcm -noun azaccount
+gcm -verb *sub*
+gcm -noun az*
+gcm -verb get -noun az*
+gcm -verb get -noun az* | more
+clear
+get-azresource
+Connect-AzAccount
+cls
+help new-azvm -full
+cls
+Get-PSReadLineKeyHandler
+New-azvm -Size 
+clear
+get-azvm -Name teske-vm1
+get-azvm -Name teske-vm1 | select name,size
+get-azvm -Name teske-vm1 -ResourceGroupName rtpsug_group | select *
+get-azvmsize -Name teske-vm1 -ResourceGroupName rtpsug_group | select *
+get-azvmsize
+get-azvmsize -Location 'South Central US'
+cls
+gcm -Verb connect -noun az*
+gcm -Verb login -noun az*
+$cred=get-credential
+Login-AzAccount -Credential $cred
+connect-azaccount
+get-azaccount
+gcm -verb get -noun *account*
+gcm -verb get -noun *user*
+cls
+get-host
+cls
+ping 192.168.174.240
+ping bed*
+ping 192.168.174.240 -t
+ipconfig
+cls
+Get-CimInstance -ClassName Win32_OperatingSystem | select build
+Get-CimInstance -ClassName Win32_OperatingSystem | select *
+cls
+get-ciminstance -ClassName Win32_ComputerSystem
+get-ciminstance -ClassName Win32_ComputerSystem | select *
+Get-CimInstance -ClassName Win32_OperatingSystem | select buildnumber
+cd\
+sl hklm:
+cd '.\SOFTWARE\Microsoft\windows nt\CurrentVersion\'
+ls
+code
+cls
+gcm connect*
+Connect-AzAccount
+get-azvm
+get-azvm | stop-azvm -whatif
+get-azvm | stop-azvm -force
+mstsc.exe /?
+mstsc.exe /v:localhost
+mstsc.exe /v:23.99.139.16
+gcm -Module azure
+gcm -module azure
+get-module -ListAvailable
+find-module azure
+get-module azure
+install-module azure
+gcm -noun az*
+get-module az
+get-module az.sql
+gcm -module az
+get-module -ListAvailable -All
+cls
+get-module -ListAvailable | where {$_.name -like 'az*'}
+get-azresrourcegroup
+get-azresourcegroup
+get-azvm
+get-azvm -Name demo*
+Get-AzVM -ResourceGroupName demo-rg
+Get-AzVM -ResourceGroupName demo-rg | stop-vm -force
+Get-AzVM -ResourceGroupName demo-rg | stop-azvm -force
+connect-azaccount
+get-azresourgroup
+get-azresourcegroup
+get-azresourcegroup | select ResourceGroupName
+help connect-azaccount
+help connect-azaccount -full
+cls
+Get-AzResourceGroup | select ResourceGroupName
+Get-Azvm | select name
+Get-Azvm
+cls
+cd\
+get-azvm
+get-help Connect-AzAccount -full
+cls
+get-help Connect-AzAccount
+cls
+get-azvm -resourcegroupname demo-rg | stop-azvm -force
+remove-azresouregroup -name demo-rg
+remove-azresourcegroup -name demo-rg
+ssh -l mj 192.168.174.147
+ssh 192.168.174.1
+ssh 192.168.174.2
+cd\
+cls
+ssh -l mj 192.168.174.147
+cls
+git
+git reflog
+cd $env:USERPROFILE
+cd .\OneDrive\_Git\
+git reflog
+get-module
+update-module
+get-module
+cls
+get-module -ListAvailable PackageManagement,powershellget
+Install-PackageProvider nuget -force
+Install-PackageProvider Nuget -force
+get-module
+update-module -Force
+cls
+install-packageprovider -Name Nuget -force
+install-packageprovider nuget -force
+hugo server
+cd /users
+cd .\micha\OneDrive\_Git\
+ls
+ls *.
+cd teskemj
+hugo server
+cd ..
+cd blog
+hugo server
+cd\
+cd $env:USERPROFILE
+cd .\OneDrive\_Git\Blog\
+ls
+git add .
+git commit -m 'pushing github pages source files to repo'
+git push
+cd /public
+ls
+cd public
+git add .
+git commit -m 'publishing my intitial site'
+git push
+cd ..
+cd content
+cd .\post\
+ls
+hugo new post/working-on-my-brand.md
+git commit -m 'pushing github pages source files to repo'
+git add .
+git commit -m 'pushing github pages source files to repo'
+git push
+cls
+hugo server
+cd ..
+hugo server
+hugo
+cd .\public\
+ls
+ls 2019
+cd ..
+ls
+hugo server
+ls
+hugo new post/test.md
+hugo new post/working-on-my-brand.md
+hugo
+hugo server
+cd ..
+cd .\public\
+git add .
+cd ..
+git add .
+git commit -m 'seeing if submodule push works'
+git push
+ .\OneDrive\_git
+cd .\OneDrive\
+ls
+cd .\_Git\
+ls
+cd .\teskemj.github.io\
+git add .
+git commit -m 'update io page'
+git push
+git add .
+git commit -m 'update io page'
+git push
+git pull
+ls
+git add .
+git commit -m 'another'
+git push
+git add .
+git commit -m 'another try'
+git push
+hugo
+cd ..
+blog
+cd .\Blog\
+ls
+hugo
+hugo server
+hugo
+hugo server
+cd ..
+cd .\teskemj.github.io\
+git add .
+git commit -m 'update blog test'
+git push
+bash
+cd ..
+cd blog
+ls
+hugo new post/hello-world-from-my-python-docker-container.md
+hugo
+hugo server
+git add .
+cd .\public\
+git add .
+ls
+git add .
+get commit -m 'docker post'
+git commit -m 'docker post'
+git push orgin master
+git push
+cd ..
+cd .\teskemj.github.io\
+git add .
+git commit -m 'Docker post'
+git push
+git config --file .gitmodules --name-only --get-regexp path
+git config --file .gitmodules --name-only
+cd ..
+cd .\Blog\public\
+ls
+cd ..
+ls
+git pull blog
+cd blog
+git pull blog
+cd blog
+git sync
+git sync all
+git --help
+cd..
+ls
+git clone https://github.com/teskemj/blog
+cd blog
+hugo server
+ls
+cd ..
+ls
+cd _git
+ls
+git --help
+cd blog
+git push
+git pull
+git add .
+git commit -m 'clean up bloggo'
+git push
+git commit -m 'clean up bloggo2'
+git add .
+git commit -m 'cleaning day'
+git push
+git commit -m 'cleaning day'
+git push
+git push orgin master
+git push origin master
+install-packageprovider nuget -force
+exit
+get-packageprovider
+install-module -name powershellget -force
+exit
+Set-ExecutionPolicy RemoteSigned
+install-module -name powershellget -force -allowclobber
+update-module -name powershellget
+get-module
+exit
+get-module
+update-module
+hugo
+hugo server
+cd C:\Users\micha\OneDrive\_git
+git clone https://github.com/themichaelbender-ms/powershelltips.git
+ls
+cd .\powershelltips\
+ls
+cd ..
+git commit -m 'cleaning day'
+git push origin master
+cd blog
+git push origin master
+git commit -m 'cleaning day'
+git push
+git commit -m 'cleaning day'
+git push
+git push --help 
+git push --force
+git push origin
+git rm -r --cached cleanup
+git rm -r --cached Cleanup
+git rm -r --cached AzureDocs
+git rm -r --cached Sec_Fun
+git rm -r --cached markdown-here.wiki
+git rm -r --cached posh
+git rm -r --cached powershelltips
+git rm -r --cached teskemj.github.io
+git commit -m 'File management'
+git rm -r Cleanup
+git rm -r Blog
+git commit -m 'cleanup'
+git push origin master
+ls
+hugo
+hugo server
+cd\
+cls
+get-service LanmanServer -DependentServices
+get-service DcomLaunch -DependentServices
+get-service AdobeUpdateService -DependentServices
+get-service Wcmsvc -DependentServices
+get-service Winmgmt -DependentServices
+az
+install-module az -AllowClobber
+update-module az
+gcm -verb connect
+connect-azaccount
+get-azresourcegroup
+get-azresourcegroup | select ResourceGroupName
+get-azresourcegroup teske-app
+gcm -noun azresourcegroup
+get-azresourcegroup teske-app | Remove-AzResourceGroup
+install-module nameit -force
+Invoke-Generate
+Invoke-Generate '[person]' -Count 10
+Invoke-Generate '[person]' -Count 100
+cd C:\Users\micha\OneDrive\_Git\posh\Users\
+get-content goodusers.txy
+ls
+get-content goodusers.txt
+get-content goodusers.txt | count
+(get-content goodusers.txt).count
+clear
+cd ..
+cd..
+cd .\powershelltips\
+git pull
+ls
+git checkout -b teskemj
+git push origin teskemj
+ls
+git branch a
+git branch -a
+cd ..
+cd .\AzureDocs\
+ls
+git add .
+git commit -m 'updated'
+git push
+cd ..\posh
+git add .
+git commit -m 'updated'
+git push
+cd ..\teskemj.github.io\
+git add .
+git commit -m 'updated'
+git push
+git pull .
+git pull --help
+git pull
+git pull --help
+git pull -f
+git add .
+git commit -m 'fixing'
+git push
+cd\
+cls
+choco search vscode
+choco install vscode 1.31.1 -y
+choco uninstall vscode
+choco install vscode 1.31.1 -y
+exit
+cd .\OneDrive\_Git\
+ls
+git clone https://github.com/teskemj/posh
+git clone https://github.com/teskemj/azuredocs
+git clone https://github.com/teskemj/random
+git clone https://github.com/teskemj/blog
+ls
+cls
+get-help rm
+cmd
+clear
+git --help
+bash
+git checkout https://github.com/themichaelbender-ms/powershelltips.git/teskemj
+git checkout https://github.com/themichaelbender-ms/powershelltips/teskemj
+git checkout https://github.com/themichaelbender-ms/powershelltips/
+git checkout https://github.com/themichaelbender-ms/powershelltipsgit
+git checkout https://github.com/themichaelbender-ms/powershelltips.git
+git clone https://github.com/themichaelbender-ms/powershelltips.git
+ls
+cd .\powershelltips\
+git checkout -b teskemj
+ls
+git status
+git add -A
+git status
+git commit -m "added 2 urls to learningresources.md"
+git push
+git push --set-upstream origin teskemj
+choco install conemu -y
+install-module posh-git -Scope CurrentUser
+install-module oh-my-posh -Scope CurrentUser
+install-module -name psreadline -allowprerelease -scope CurrentUser -force -SkipPublisherCheck
+cd .\OneDrive\
+cd _git
+ls
+cd posh
+ls
+test-path -Path $profile
+New-Item -Type file -Path $PROFILE -force
+test-path -Path $profile
+notepad $profile
+$themesettings
+import-module posh-git
+import-module oh-my-posh
+test-path -path $profile
+exit
+gc $profile
+ls
+sl $userprofile
+ls
+cd .\OneDrive\_Git\
+cd posh
+$gitpromptsettings
+set-theme paradox
+$defaultuser = 'teske'
+$defaultuser
+get-theme
+set-theme powerline
+ls
+pwd
+cd .\OneDrive\
+cd _git\posh
+ls
+pwd
+cd ..
+ls
+cd ..
+ls
+gc text.txt
+gc test.txt
+cls
+install-module dbatools
+update-module
+$env
+ls $env
+ls $env:
+sl $env:
+sl $env
+$env:Path
+$env:DriverData
+cls
+cd\
+sl env:
+ls
+$env:onedrive
+gc $profile
+cd _git
+cd posh
+Set-Theme Paradox
+git status
+git add .
+git status
+git commit -m 'notes from Thomans Rayners RTPSUG session on Git'
+git status
+git push
+cls
+git status
+git status
+2019-1996
+cls
+import-module pscolor
+install-module pscolor
+import-module pscolor
+(get-date).tocday
+(get-date).today
+(get-date).today()
+get-date |gm
+get-date.date
+(get-date).day
+(get-date).date
+get-help get-date
+get-help get-date -online
+git clone https://github.com/adam-p/markdown-here.wiki.git
+cd petri
+get-content petri-md
+get-content petri-1.md
+(get-content petri-1.md).count
+get-content petri-1.md | measure-object
+get-content petri-1.md | measure-object -line
+get-content petri-1.md | measure-object -word
+connect-azaccount
+Get-AzResourceGroup rtpsug-wp
+get-azresourcegroup teske-app | Remove-AzResourceGroup
+get-azresourcegroup rtpsug-wp | Remove-AzResourceGroup -force
+cd\
+clear
+cls
+cls
+get-azresourcegroup
+$profile
+ri $profile
+$profile
+cd $profile
+cd $user
+cd .\Documents\PowerShell\
+ls
+ls -l
+cls
+ls
+gcm *item*
+remove-item *.ps1
+ls
+exit
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+notepad $PROFILE
+gc $profile
+if (!(Test-Path -Path $PROFILE )) { New-Item -Type File -Path $PROFILE -Force }
+notepad $PROFILE
+$env:USERNAME
+code $profile
+choco /?
+cls
+choco /? | more
+choco upgrade pwsh
+install-module powershellget -force
+. { Invoke-WebRequest -useb http://boxstarter.org/bootstrapper.ps1 } | Invoke-Expression; get-boxstarter -Force
+get-module -name boxstarter.winconfig
+get-command -Module boxstarter.winconfig
+help Set-ExplorerOptions -full
+help Set-windowsExplorerOptions -full
+get-command -Module boxstarter.winconfig
+Get-Process -Name POWERPNT
+get-azvm
+get-azvm -Name teske1,teske2 | start-asvm -verbose
+get-azvm -Name teske1,teske2 | start-azvm -verbose
+get-azvm | start-azvm -verbose
+gcm -noun azvm
+get-azvm | restart-azvm -Verbose
+get-azvm | stop-azvm -verbose -force
+ipconfig /all
+[HueBridge]::FindHueBridge()
+install-module -name poshue
+import-module poshue
+[HueBridge]::FindHueBridge()
+$Bridge = [HueBridge]::new($RemoteAccessToken, $true)
+$Bridge.GetNewApiKey()
+[HueBridge]::FindHueBridge()
+)
+add-type -AssemblyName system.drawing
+[HueBridge]::FindHueBridge()
+gcm -module poshue
+import-module poshue
+get-module -Name poshue
+get-module -ListAvailable
+install-module poshue -force
+import-module poshue
+[HueBridge]::FindHueBridge()
+add-type -AssemblyName system.drawing
+[HueBridge]::FindHueBridge()
+cd $env:USERPROFILE
+cd .\OneDrive\_Git\posh\Hue\
+import-module .
+import-module poshue.ps1
+[HueBridge]::FindHueBridge()
+gc *.ps1
+$bridge = [HueBridge]::New('192.168.174.217')
+$bridge
+$bridge.getnewapikey()
+$bridge
+$bridge.getlightnames()
+$bridge | gm
+$bridge.togglealllights()
+$bridge.ToggleAllLights()
+$bridge.ToggleAllLights("on")
+$bridge.ToggleAllLights("off")
+$bridge.getlightnames()
+cls
+$bridge.getlightnames()
+[voide] SwitchHueLight()
+[void] SwitchHueLight()
+$bridge
+$bridge | select BridgeIP,APIKey | Export-Csv hueapi.csv
+start hueapi.csv
+$bridge.getlightnames()
+$bridge.ToggleAllLights("on")
+[string] SetHueLightTransition([int] $Brightness, [int] $Hue, [int] $Saturation, [uint16] $TransitionTime)
+find-module *weather*
+get-azresourcegroupname
+get-azresourcegroup
+cls
+cls
+choco upgrade pwsh
+cls
+ping google.com
+ipconfig
+cd\
+cls
+Get-AzVMSize -Location westus
+get-azvmsize -ResourceGroupName mt-rg
+get-azvmsize -ResourceGroupName 'mt-rg'
+get-azvmsize -ResourceGroupName 'mt-rg' -VMName 'teske1'
+get-azvmsize -location 'northcentralus'
+get-azvmsize -location 'northcentralus' where numberofcores -eq 24
+get-azvmsize -location 'northcentralus' | where numberofcores -eq 24
+cls
+Connect-VIServer
+gcm connect*
+gcm -verb connect
+Connect-VIServer -Server 192.168.174.227
+get-vm
+get-vm | stop-vm -force
+get-vm | stop-vm
+get-vm
+cd .\azuredocs\
+git pull
+ls
+git pull
+choco search adobe
+choco install adobereader
+get-host
+choco search pwsh
+choco upgrade pwsh
+get-host
+exit
+get-azvm
+get-azvm -ResourceGroupName mt-rg | start-azvm
+Get-AzResourceGroup raz*
+Get-AzResourceGroup
+Get-AzResourceGroup -ResourceGroupName az*
+Get-AzResourceGroup -ResourceGroupName raz*
+Get-AzResourceGroup -ResourceGroupName Raz*
+Get-AzResourceGroup -ResourceGroupName Raz* | Remove-AzResourceGroup -Verbose -Force
+Get-AzResourceGroup -ResourceGroupName Raz* 
+Get-AzResourceGroup -ResourceGroupName RazorPagesMovie-3-dev-rg | Remove-AzResourceGroup -Verbose
+ls
+ls d*
+cd '.\Dropbox (Pluralsight)\'
+ls
+get-azvm
+get-azvm | start-azvm -Verbose
+gcm -noun azvm
+get-azvm | remove-azvm
+Get-AzVMSize -Location 'East us'
+get-azvmsize -location 'east us'
+get-azvmsize -location 'central us'
+gcm -noun azvm
+update-help -force
+update-help -force -verbose
+cls
+get-help new-azvm -full
+cls
+cd\
+get-help new-azvm -full
+get-azvm | start-azvm -verbose
+get-azvm
+get-azvm |select *
+get-azvm |select status
+get-azvm |select osprofile
+ping google.com
+cd .\Courses\
+cd .\Security\
+md securing-microsoft-azure-networks
+md hardening-platform-security-in-microsoft
+md implementing-host-security-in-microsoft-azure
+md implementing-microsoft-azure-subscription-security
+ls
+cd $env:USERPROFILE
+cd '.\Dropbox (Personal)\reports'
+ls
+ls good
+cd\
+cls
+choco help
+choco -?
+cls
+cd .\_git
+cd ..
+cd..
+cd .\OneDrive\
+cd .\_Git\
+lc
+cls
+cd posh
+cd .\PowerShell\
+ls
+get-content .\goodusers.txt | Measure-Command
+get-content .\goodusers.txt | Measure-object
+get-process chrom*
+gcm az*
+get-module
+get-command -module az*
+cls
+gcm connect*
+Get-AzResourceGroup
+cls
+get-azvm
+Get-AzNetworkSecurityGroup
+Get-Azcls
+cls
+Get-AzNetworkSecurityGroup | more
+cd\
+gcm *update*
+cls
+ Get-WindowsUpdateLog 
+cd\
+get-azvm
+connect-azaccount
+get-azvm
+get-azvm | remove-azvm -Verbose
+get-azresourcegroup -name demo-rg
+get-azresourcegroup -name demo-rg | remove-azresourcegroup -verbose
+ls
+cd temp
+ls
+gc sup.txt
+cls
+ls
+gc stopwords.txt
+gcm -verb create
+gcm -noun archive
+ssh 192.168.174.1 -l ubnt
+clear
+New-AzResourceGroup -name 'demo-rg' -tag 'demo' -Location 'Central US'
+New-AzResourceGroup -name 'demo-rg' -tag demo -Location 'Central US'
+update-help -force -verbose
+New-AzResourceGroup -name 'demo-rg' -tag @{empty=$null; Group="Demo"} -Location 'Central US'
+cd\
+new-azvm ``
+    -ResourceGroupName 'demo-rg' ``
+    -name 'demo-2' ``
+    -Location 'Central US' ``
+    -VirtualNetworkName 'demo-vnet' ``
+    -SubnetName 'demo-sn' ``
+    -PublicIpAddressName 'myPubIP' ``
+    -Size 'Standard_B1S'  #Critical parameter. If not specified, will use default size $$
+new-azvm ``
+    -ResourceGroupName 'demo-rg' ``
+    -name 'demo-2' ``
+    -Location 'Central US' ``
+    -VirtualNetworkName 'demo-vnet' ``
+    -SubnetName 'demo-sn' ``
+    -PublicIpAddressName 'myPubIP2' ``
+    -Size 'Standard_B1S'  #Critical parameter. If not specified, will use default size $$
+ssh 192.168.174.1 -l ubnt
+ipconfig
+ipconfig /release
+ipconfig /renew
+ping 192.168.1.4 -t 0
+ping 192.168.1.4 -t
+ping 192.168.1.5 -t
+get-azvm
+get-azvm | start-azvm
+get-azvm | gm
+get-azvm
+(get-azvm).StatusCode
+get-azvm -status
+$vms = get-azvm -status
+$vms.statuses
+$vms.statuses.displaystatus
+$vms
+$vms = get-azvm
+$vms.statuses.displaystatus
+$vms
+$vms.powerstate
+$vms = get-azvm -status
+$vms.powerstate
+cls
+get-azvm | start-azvm -Verbose
+cd\
+cls
+get-azlocalnetworkgateway
+$rt = get-azroutetable -ResourceGroupName 'demo-rg'
+$rt
+get-azvirtualnetwork -ResourceName 'demo-rg`
+'
+get-azvirtualnetwork -ResourceGroupName 'demo-rg`
+'
+cls
+Get-AzVirtualNetwork -ResourceGroupName 'demo-rg'
+New-AzRouteTable -name "MyRouteTable" -ResourceGroupName 'demo-rg' -Location 'centralus'
+$rt = get-azroutetable -name 'MyRouteTable' -ResourceGroupName 'demo-rg'
+$rt
+Get-AzVirtualNetworkSubnetConfig -name 'demo-sn'
+Get-AzVirtualNetworkSubnetConfig -VirtualNetwork 'demo-sn'
+help Get-AzVirtualNetworkSubnetConfig -examples
+Get-AzVirtualNetworkSubnetConfig -name demo-sn
+$vnet = Get-AzVirtualNetwork -ResourceGroupName 'demo-rg'
+Get-AzVirtualNetworkSubnetConfig -name demo-sn -VirtualNetwork $vnet
+get-azlocalnetworkgateway -ResourceGroupName 'demo-rg'
+$rt
+add-azrouteconfig -name "DefaultRoute" -AddressPrefix '0.0.0.0/0' -NextHopType VirtualNetworkGateway -RouteTable $rt
+Set-AzRouteTable -RouteTable $rt
+Set-AzVirtualNetworkSubnetConfig -name 'demo-sn' -VirtualNetwork $vnet -AddressPrefix '192.168.1.0/24' -RouteTable $rt
+Set-AzVirtualNetwork -VirtualNetwork $vnet
+get-azlocalnetworkgateway -ResourceGroupName 'demo-rg'
+$localgw = get-azlocalnetworkgateway -ResourceGroupName 'demo-rg'
+$azvirtualgw = get-azvirtualnetworkgateway -ResourceGroupName 'demo-rg'
+$azvirtualgw
+Set-AzVirtualNetworkGatewayDefaultSite -GatewayDefaultSite $localgw -VirtualNetworkGateway $azvirtualgw
+(h).CommandLine
+(h).CommandLine | out-file C:\Users\micha\OneDrive\_Git\azuredocs\security\forcedtunnel.ps1
+cls
+get-azvm | stop-azvm -verbose -force
+ping 1.1.1.1
+ping 1.1.1.1 -t
+ping 192.168.1.4
+ping 192.168.1.5
+ping 192.168.1.5 -t
+ping 192.168.1.4 -t
+cls
+cls
+ssh mj@192.168.1.6
+ping 192.168.1.4
+ping 192.168.1.5
+ping 192.168.1.6
+get-azaccount
+get-azvm
+get-azvm `
+
+get-azvm | start-azvm | where {name -eq 'demo'} -Verbose
+cd\
+cls
+get-azvm -ResourceGroupName demo-rg | start-azvm -Verbose
+ssh 10.0.0.62 -l root
+ssh root@10.0.0.62
+cls
+get-azvm
+Register-AzResourceProvider -ProviderNamespace 'microsoft.policyinsights'
+ssh mj@10.0.0.66
+ssh mj@10.0.0.77
+net share
+ipconfig
+ping google.com
+cd\
+ssh mj@10.0.0.77
+cls
+get-azvm
+get-azvm |restart-azvm -verbose
+ping 192.168.1.4
+ping 192.168.1.5
+get-azvm | restart-azvm -verbose
+ssh mj@10.0.0.77
+Get-AzRoleDefinition -name 'contributor'
+ping 192.168.1.5
+cd\
+cls
+get-azvm | start-azvm -Verbose
+get-vm | start-vm
+get-azvm | start-azvm
+gcm *connect*
+connect-viserver 10.0.0.62
+get-vm -Name 'dc1'
+get-vm -Name 'dc1' | start-vm
+get-vm | stop-vm
+gx
+gs
+gv
+gsv
+gsv | ogv -PassThru
+gsv | ogv
+gsv | ogv -PassThru
+Get-AzContainerGroup -ResourceGroupName demo-rg -Name mycontainer
+get-azvm | start-azvm -Verbose
+az ?
+az
+New-AzResourceGroup -Name 'demo-containers' -Location 'East US'
+gcm *aks*
+get-help new-azaks -full
+udpatcls
+cls
+update-help -force
+get-help new-azaks -full
+get-azvm | start-azvm -verbose
+get-process
+get-process sn*
+$now=get-process
+$then=get-process
+gcm compare*
+help compare
+help compare -Examples
+compare $now $then
+get-azvm | stop-azvm -Verbose -force
+az /?
+get-vm
+get-vm
+get-azvm | gm
+(get-azvm).StatusCode
+(get-azvm).ProvisioningState
+cd '.\Dropbox (Personal)\_Pluralsight\Courses\Security\implementing-microsoft-azure-subscription-security\'
+for ($i = 1; $i -le 4; $i++) { new-item -Name mod$i -ItemType Directory } -Verbose
+new-item -name 'course-deliverables' -ItemType Directory -Verbose
+cd\
+Get-AzRoleAssignment | where {$_.RoleDefinitionName -eq "User Access Administrator" ``
+  -and $_.SignInName -eq "michael.teske@Outlook.com" -and $_.Scope -eq "/"}
+Get-AzRoleAssignment | where {$_.RoleDefinitionName -eq "User Access Administrator"}
+exit
+cd\
+cls
+Get-AzPolicyDefinition | where {$_.Properties.displayname -like 'sku'}
+Get-AzPolicyDefinition | where {$_.Properties.displayname -like 'SKU'}
+Get-AzPolicyDefinition | Where-Object { $_.Properties.DisplayName -eq 'Audit VMs that do not use managed disks'`
+}
+Get-AzPolicyDefinition | where {$_.Properties.displayname -like '*SKU*'}
+Get-AzResourceLock
+Get-AzResourceLock -ResourceGroupName 'demo-rg'
+Get-AzRoleDefinition | where {$_.iscustom -eq $true} | format-table name, iscustom
+get-azprovideroperation "microsoft.compute/virtualmachines/*" | ft operationname,Operation
+get-azprovideroperation "microsoft.compute/virtualmachines/*" | ft operationname,Operation,Description -AutoSize
+Get-AzSubscription
+$id=Get-AzSubscription.id
+$id=(Get-AzSubscription).id
+$id
+Get-AzRoleDefinition | where {$_.iscustom -eq $true} | format-table name, iscustom
+cls
+get-process *scr*
+start screensketch
+gcm -noun *lock*
+get-process *scr*
+get-process *screen*
+get-process *sketch*
+get-process *sketch* | stop-process
+get-azvm | gm
+get-azvm | stop-azvm -verbose
+Get-AzResourceLock
+Get-AzResourceLock | select name,resourcename,resourcegroupname
+Get-AzResourceLock | format-list name,resourcename,resourcegroupname
+Get-AzResourceLock | format-list name,resourcename,resourcegroupname,properties
+Get-AzResourceLock | format-list name,resourcename,resourcegroupname
+get-azvm | start-azvm -verbose -force
+get-azvm | start-azvm -Verbose
+Get-AzManagementGroup
+Get-AzManagementGroup | format-list name
+Get-AzManagementGroup | select name
+Get-AzManagementGroup | select name -ExcludeProperty
+Get-AzManagementGroup | select -ExpandProperty name
+Get-AzManagementGroup | select -ExpandProperty 'displayname'
+cls
+cd\
+gcm -noun azrole*
+Get-AzRoleAssignment
+Get-AzRoleAssignment | where {$_.signinname -like '*michael*'} | select scope,RoleDefinitionId
+Get-AzRoleAssignment | where {$_.signinname -like '*michael*'} | select scope,RoleDefinitionId,RoleDefinitionName
+Get-AzRoleAssignment | where {$_.signinname -like '*michael*'} | ft scope,RoleDefinitionId,RoleDefinitionName
+Get-AzRoleAssignment | where {$_.signinname -like '*michael*'} | ft RoleAssignmentId
+Get-AzRoleAssignment | where {$_.signinname -like '*michael*'} | ft RoleDefinitionName
+gcm -noun azrole*
+cls
+get-azroledefinition "virtual machine monitorer"
+$role = get-azroledefinition "virtual machine monitorer"
+$role.action
+$role.actions
+$arguments = @{`
+    -LockName 'dontdeleteme'
+    -LockLevel CanNotDelete
+    -ResourceGroupName 'demo-rg'
+cls
+new-azresourcelock -LockName 'dontdeleteps' -LockLevel CanNotDelete -ResourceGroupName 'demo-rg'
+get-process *slack*
+get-process *slack* | stop
+get-process *slack* | Stop-Process
+get-process *adob*
+get-process *adob* | stop-process
+get-process *adobe* | stop-process
+cd\
+cls
+cd\
+cls
+cd\
+cls
+get-azvm | stop-azvm -Verbose -force
+get-process
+docker
+   Install-Module -Name MSTerminalSettings -RequiredVersion 0.1.0.2cls
+install-module -name msterminalsettings
+gcm -Module msterminalsettings
+get-msterminalcolorscheme
+cls
+gcm -Module msterminalsettings
+update-help -force
+Get-MSTerminalColorScheme
+Get-MSTerminalColorScheme | more
+update-module msterminalsettings
+Get-MSTerminalProfile | select fontface
+Get-MSTerminalProfile | Set-MSTerminalProfile -FontFace "FuraMono NF"
+Get-MSTerminalProfile | Set-MSTerminalProfile -FontFace "Consolas"
+ls ms-appdata:///roaming
+cd\
+ls
+get-process
+cd .\OneDrive\
+ls
+ls _*
+\cd _git
+cd _Git
+git clone https://github.com/jfberenguer/LogAnalytics
+cd ..
+cd _git
+ls
+docker run -d -p 10001:1433 -e ACCEPT_EULA=Y -e SA_PASSWORD=Test1234 --name testcontainer01 microsoft/mssql-server-linux
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+get-module -name sql*
+gcm invoke-sql*
+install-module sqlserver
+install-module sqlserver -force
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+gcm invoke*
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+get-help invoke-sqlcmd
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+exit
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+docker cp "$($Home)/Downloads/AdventureWorks2016.bak" testcontainer01:'var/opt/mssql/data/'
+docker exec -it testcontainer01 bash
+$RelocateData = New-Object Microsoft.SqlServer.Management.Smo.RelocateFile('AdventureWorks2016_Data', '/var/opt/mssql/data/AdventureWorks2016_Data.mdf');
+$RelocateLog = New-Object Microsoft.SqlServer.Management.Smo.RelocateFile('AdventureWorks2016_Log', '/var/opt/mssql/data/AdventureWorks2016_Log.ldf');`
+
+Restore-SqlDatabase -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -BackupFile 'AdventureWorks2016.bak' -Database 'AdventureWorks2016'  -RelocateFile @($RelocateData,$RelocateLog);`
+
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Username sa -Password Test1234 -Query "`
+RESTORE DATABASE [AdventureWorks2016] FROM  DISK = N'/var/opt/mssql/data/AdventureWorks2016.bak' WITH  FILE = 1,`
+MOVE N'AdventureWorks2016_Data' TO N'/var/opt/mssql/data/AdventureWorks2016_Data.mdf',`
+MOVE N'AdventureWorks2016_Log' TO N'/var/opt/mssql/data/AdventureWorks2016_Log.ldf',`
+NOUNLOAD,  STATS = 5"`
+`
+`
+`
+
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+choco ?
+choco -?
+choco search edge*
+gcm *json*
+test-json
+update-help -force
+Get-AzPolicyDefinition | Where-Object { $_.Properties.DisplayName -eq 'Audit VMs that do not use managed disks' }
+Get-AzPolicyDefinition | Where-Object { $_.Properties.DisplayName -eq '*SKU*' }
+Get-AzPolicyDefinition | Where-Object { $_.Properties.DisplayName -like '*SKU*' }
+cls
+(get-date).Add(10)
+(get-date).AddDays(10)
+(get-date).Date(2/12/1972)
+(get-date).DayOfYear
+(get-date).Add(5)
+set-ruleoption -help
+cls
+cd\
+cls
+get-process
+cls
+foreach ($proc in get-process)`
+    {`
+    try`
+        {`
+        Get-FileHash $proc.path -Algorithm SHA1 -ErrorAction stop`
+        }`
+    catch`
+        {`
+         #error handling... log contains names of processes where there was no path listed or we lack the rights`
+         $proc.name | out-file c:\proc_hash_error.log -Append`
+        }`
+    }`
+`
+`
+`
+`
+`
+`
+`
+`
+`
+`
+
+$proc = get-process
+$proc.path
+$proc | gm
+gcm *json*
+cd\
+cd $Profile
+cd $profile
+cd $home
+dir
+cd documents
+ls
+md test
+cd test
+notepad
+ConvertFrom-Json test.json
+get-help convertfrom-json -full
+get-content test.json | convertfrom-json
+cls
+$mem=Get-CimInstance -ClassName Win32_PhysicalMemoryArray
+$mem.MaxCapacity
+$mem.MaxCapacity/1gb
+$mem.MaxCapacity/1mb
+$mem.MaxCapacity/1kb
+$mem.MaxCapacity/1mb
+$mem.MemoryDevices
+[void][Windows.Security.Credentials.PasswordVault,Windows.Security.Credentials,ContentType=WindowsRuntime]
+$vault = New-Object Windows.Security.Credentials.PasswordVault
+$vault.RetrieveAll() | % { $_.RetrievePassword();$_ }
+$vault
+$vault | gm
+powershell /?
+help about_reg*
+help about_Regular_Expressions
+cls
+choco /?
+choco upgrade
+choco upgrade *
+choco upgrade all
+choco search slack
+choco install slack -y
+choco update slack -y
+choco upgrade slack -y
+connect-msolservice
+find-module office365
+install-module office365
+gcm -verb connect
+Connect-MsolTenant
+find-module azure*
+find-module azure.active*
+find-module azureact*
+find-module azuread
+install-module azuread -force
+gcm -module azuread
+gcm -Module AzureAD
+gcm *mail*
+gcm *office*
+find-module *office*
+connect-azuread
+install-module -name azuread
+gcm -verb connect
+install-module msonline
+gcm -Module msonline
+gcm connect*
+connect-msolservice
+$me=get-credential
+Connect-MsolService -Credential $me
+$me=get-credential
+Connect-MsolService -Credential $me
+get-help Connect-MsolService -full
+update-help -force
+update-module -Force
+install-module azuread
+connect-azuread
+gcm -verb connect
+$me
+Connect-MsolService -Credential $me
+$me = get-credential
+Connect-MsolService -Credential $me
+get-msoluser
+$exsession = New-PSSession -ConfigurationName microsoft.exchange -ConnectionUri "https://outlook.office365.com/powershell-liveid/" -Credential $me -Authentication 'basic' -AllowRedirection
+get-mailboxfolderpermission billie:\calendar
+Import-PSSession $exsession -DisableNameChecking
+get-mailboxfolderpermission billie:\calendar
+get-msoluser | select *
+(history).CommandLine
+(history).CommandLine | $home\onedrive\_git\calperms.ps1
+$home
+(history).CommandLine | out-file $home\onedrive\_git\calperms.ps1
+get-msoluser
+get-msoluser 
+get-msoluser | Get-MailboxFolderPermission
+Get-Mailbox
+$names=(Get-Mailbox).name
+$names
+($names).count
+get-process *edge*
+get-process microsoftedge*
+get-process microsoftedge* | stop=process
+get-process microsoftedge* | stop-process
+find-module ise*
+gcm -noun module
+get-module
+get-module ise*
+uninstall-module isesteroids
+choco search cccleaner
+choco search ccleaner
+choco install ccleaner
+get-process sketc*
+get-process
+get-process scree*
+get-process scree* | stop-process
+choco list -lo --audit -r
+choco list
+choco list --localonly
+choco outdated
+choco upgrade all --noop
+choco upgrade all -y
+ls
+cd '.\Dropbox (Personal)\'
+cd courses
+ls
+cd .\_Pluralsight\Courses\Migration\
+cd v2
+md assessment
+md rehost
+cd asse
+cd .\assessment\
+md files
+cd\
+get-date -Format filedate
+"hello world" > "tmp_$(get-date -Format FileDate).txt"
+$home
+cd\
+ls
+cd temp
+ls
+"hello world" > c:\temp\"tmp_$(get-date -Format FileDate).txt"
+ls
+gc tmp*
+get-alias
+"hello world" > c:\temp\"tmp_(get-date -Format FileDate).txt"
+"hello world" > c:\temp\"tmp_(get-date -Format FileDate).txt2"
+cd temp
+ls
+"hello world" > c:\temp\"tmp_$(get-date -Format FileDate).txt2"
+ls
+get-help about_$
+get-help about_$*
+$p= ps | select -first 2
+"proc name is $($p.name)"
+docker ps
+docker ps -a
+docker start microsoft/mssql-server-linux
+docker start 47af3ee66c62
+docker ps
+(get-date).AddDays(-28)
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+Get-AzSubscription
+30+30+20+20+20
+find-module dba*
+install-module dbatools
+install-module dbatools -Verbose
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+ii explorer
+ii explorer.exe
+explorer.exe
+cd\
+cls
+Invoke-Item explorer.exe
+ii .
+powercfg -h off
+$pwd
+cd temp
+ii .
+gcm -Module PSWordCloud
+help new-wordcloud -full
+update-module pswordcloud
+ls
+gc words.txt
+ii words.txt
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+get-process
+"John D. Smith" -replace "(\w+) (\w+)\. (\w+)", '$1.$2.$3@contoso.com'
+Get-ChildItem ${env:ProgramFiles(x86)}
+$h = @{abc='hello';color='green'}
+$h
+cls
+ps 4> ps.txt
+ls
+gc ps.txt
+gc words.txt
+$a = @(ps | where name -like 'teams')
+$a
+$a | select *
+$($x=1;$y=2;$x;$y)
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+docker run -d -p 10001:1433 -e ACCEPT_EULA=Y -e SA_PASSWORD=Test1234 --name testcontainer01 microsoft/mssql-server-linux
+cls
+docker ps
+docker ps -a
+docker /?
+docker --help
+docker ps -a
+docker start testcontainer01
+docker ps
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "use adventureworks2016 SELECT *"
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "use adventureworks2016 SELECT * from person.address"
+docker ps
+docker ls
+docker --help
+docker -ps
+docker ps
+docker ps -a
+docker start testcontainer01
+dotnet new
+dotnet new webApp -o myWebApp --no-https
+ls mywebapp
+cd .\myWebApp\
+dotnet run
+docker search raz*
+get-azvm
+Get-AzSubscription
+Get-AzPublicIpAddress
+Get-AzNetworkInterface | select *
+Get-AzPublicIpAddress -ResourceName "demo-rg" | Remove-AzPublicIpAddress -Force -Verbose
+get-azresourcegroup -name 'my*'
+get-azresourcegroup -name 'myfw*' | Remove-AzResourceGroup
+docker images
+docker run hello-world
+start https://docs.docker.com/get-started/
+docker search pwsh
+docker search sqlexpress
+docker pull jgventure/sqlexpress
+docker pull hsuyanto/sqlexpress.net45
+docker ps
+docker ps -a
+docker search bash
+docker run -it ubuntu bash
+bash
+cls
+docker ps -a
+docker ps
+docker run ubuntu
+docker ps
+docker start ubuntu
+docker start bash
+docker run hello-world
+docker run ubuntu bash
+docker start ubuntu bash
+docker ps -a
+docker ps
+"/hello"
+/hello
+docker run /hello
+docker run "/hello"
+docker start sad_kare
+bash
+docker ps -a
+docker start testcontainer01
+docker ps
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "use adventureworks2016 SELECT * from person.address"
+(Invoke-RestMethod "http://data.alexa.com/data?cli=10&dat=s&url=RidiCurious.com").alexa.sd[1].Popularity.Text
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "use adventureworks2016 SELECT *"
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+install-module sql
+Invoke-Sqlcmd -ServerInstance 'localhost,10001' -Credential (Get-Credential sa) -Query "SELECT name from sys.databases"
+gcm -module powercli
+gcm -Module powercli
+find-module powercli
+gcm -Module *powercli
+gcm -module vmware.powecli
+find-module vmware.powercli
+install-module vmware.powercli
+gcm -Module vmware.powercli
+gcm -Verb connect
+get-version
+$psversiontable
+get-alias
+Get-WindowsCapability
+Get-WindowsCapability -online
+Get-WindowsCapability -online | where name -like 'openssh'
+$psversiontable
+iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
+Get-NetFirewallRule -name *ssh*
+$islinux
+$iswindows
+$iswindows | gm
+ipconfig
+get-localus
+Get-LocalUser
+hostname
+net share
+ping 10.0.0.11
+ping 10.0.0.111
+ping 10.0.0.100
+ping 10.0.0.101
+find-module git*
+install-module posh-git
+ping 10.0.0.201
+gcm test*
+Test-NetConnection 10.0.0.201 -Port 443 -InformationLevel Quiet
+Test-NetConnection 10.0.0.201 -Port 80 -InformationLevel Quiet
+ping 10.0.0.201 -t
+Test-NetConnection 10.0.0.201 -Port 5480 -InformationLevel Quiet
+cd\
+cd windows\etc
+cd windows\system32
+cd ..
+cd drivers
+ssh mj@10.0.0.125
+ping 172.17.0.1
+test-netconnection 10.0.0.125 -Port 1433
+ssh mj@10.0.0.125
+Test-NetConnection 10.0.0.125 -port 1433
+ssh mj@10.0.0.125
+Test-NetConnection 10.0.0.125 -port 1433
+2019-74
+docker ps
+exit
+exit
+docker ps
+docker run "/hello"
+docker run hello-world
+docker ps
+docker ps -a
+ssh mj@10.0.0.125
+docker search sqlexpress
+docker pull jgventure/sqlexpress
+docker pull hsuyanto/sqlexpress.net45
+docker search pwsh
+docker pull richardchmielek/pwsh-azure-cli
+docker ps -a
+docker ps
+docker image ls
+docker container ls --all
+docker run richardchmielek/pwsh-azure-cli
+docker ps -a
+pwsh
+docker remove
+docker --help
+docker rm 
+docker rm richardchmielek/pwsh-azure-cli
+docker rmi richardchmielek/pwsh-azure-cli
+docker rmi richardchmielek/pwsh-azure-cli -force
+docker rmi richardchmielek/pwsh-azure-cli -f
+docker search sql
+docker search mssql
+docker run --detach --publish 80:80 --name webserver nginx
+ie localhost
+docker ps -a
+docker rmi eloquent_margulis
+docker rmi c7053bbc27e1
+docker container ls -all
+ssh mj@10.0.0.125
+docker run --name webserver mssql-server-linux
+docker run -detach --name webserver mssql-server-linux
+docker run --detach --publish 1433:1433 --name sqlnix microsoft/mssql-server-linux
+docker container ls -all
+Test-NetConnection localhost -port 1433
+docker run sqlnix
+docker run d53e4ddfa463
+microsoft/mssql-server-linux
+docker run microsoft/mssql-server-linux
+docker run microsoft/mssql-server-linux --accept-eula
+ssh -l @10.0.0.125
+ssh -l mj@10.0.0.125
+ssh /?
+help ssh
+ssh -h
+ssh mj@10.0.0.125
+cls
+docker pull mcr.microsoft.com/mssql/server:2017-latest
+(Invoke-Webrequest https://mcr.microsoft.com/v2/mssql/server/tags/list).content
+docker images
+rmi microsoft/mssql-server-linux
+docker rmi microsoft/mssql-server-linux
+docker rmi microsoft/mssql-server-linux -f
+docker images
+docker run \
+    -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD='$PASSWORD \
+    --name 'sql1' \
+    -p 1433:1433 \
+cd\
+docker run -e 'ACCEPT_EULA=Y' -e MSSQL_SA_PASSWORD='P@ssw0rd' --name 'sql1' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+docker ps
+cls
+sqlcmd
+sqlcmd -S localhost,1433 -U sa -Q 'SELECT @@SERVERNAME -P P@ssw0rd'
+sqlcmd -S localhost,1433 -U sa -Q 'SELECT localhost -P P@ssw0rd'
+sqlcmd -S localhost,1433 -U sa -Q 'SELECT @@SERVERNAME -P P@ssw0rd'
+sqlcmd -S localhost,1433 -U sa -Q 'SELECT @@SERVERNAME' -P P@ssw0rd
+cd '.\Users\micha\Dropbox (Personal)\'
+md docker
+cd docker
+ls
+docker cp .\AdventureWorks2016.bak sql1:/var/opt/mssql/data
+sqlcmd -S localhost,1433 -U sa -i AdventureWorks2016.bak -p P@ssw0rd
+sqlcmd -S localhost,1433 -U sa -i AdventureWorks2016.bak -P P@ssw0rd
+invoke-sqlcmd -ServerInstance localhost,1433 -Username sa -Password P@ssw0rd -Query ''
+invoke-sqlcmd -ServerInstance localhost,1433 -Username sa -Password P@ssw0rd -Query "`
+`
+hi`
+"
+ping 8.8.8.8
+ping 8.8.8.8 -t
+86400/60
+1440/24
+60*24
+1440/60
+1440*8
+ssh mj@10.0.0.125
+ssh mj@10.0.0.145
+bash
+get-process
+get-process adobe*
+get-process adobe* | stop-process
+get-process acro*
+get-process acro* | stop-process
+cd .\OneDrive\
+cd .\_Git\
+git clone https://github.com/teske/author-hub
+git clone https://github.com/teskemj/author-hub.git
+cd .\author-hub\
+git push
+ipconfig /all
+ssh mj@10.0.0.125
+ping 10.0.0.125 -t
+test-netconnection 10.0.0.125 -port 53
+ssh mj@10.0.0.125
+ping 10.0.0.125 -t
+test-netconnection 10.0.0.125 -port 53
+test-netconnectoin 10.0.0.125 -port 80
+test-netconnection 10.0.0.125 -port 80
+ssh mj@10.0.0.125
+ipconfig /flushdns
+ipconfig /registerdns
+ping google.com
+ping 10.0.0.125
+Test-NetConnection 10.0.0.125 -Port 53
+ping google.com
+ping 10.0.0.125 -t
+ssh mj@10.0.0.125
+gip | select ip4address
+gip
+gip | select ipv4address
+cd\
+ls
+cd temp
+Invoke-WebRequest "https://aka.ms/dependencyagentwindows" -OutFile InstallDependencyAgent-Windows.exe
+Invoke-WebRequest "https://ahttps://github.com/microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_v1.11.0-0" -OutFile InstallDependencyAgent-Windows.sh
+Invoke-WebRequest "https://ahttps://github.com/microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_v1.11.0-0/omsagent-1.11.0-9.universal.x64.sh" -OutFile 
+Invoke-WebRequest "https://ahttps://github.com/microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_v1.11.0-0/omsagent-1.11.0-9.universal.x64.sh" -OutFile omsagent-1.11.0-9.universal.x64.sh
+Invoke-WebRequest "https://github.com/microsoft/OMS-Agent-for-Linux/releases/tag/OMSAgent_v1.11.0-0/omsagent-1.11.0-9.universal.x64.sh" -OutFile omsagent-1.11.0-9.universal.x64.sh
+ssh mj@10.0.0.125
+docker -ls
+docker -
+docker -l
+docker ps
+docker run -e 'ACCEPT_EULA=Y' -e MSSQL_SA_PASSWORD='P@ssw0rd' --name 'sql1' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+docker images
+docker start sql1
+docker ps
+ipconfig
+ssh mj@10.0.0.145
+netstat -aon | find 1433
+netstat -aon | findstr 1433
+docker ps
+docker start sql1
+docker ps
+ssh mj@10.0.0.145
+get-process *sketch*
+get-process *sketch* | stop-process
+hostname
+ping 10.0.0.201
+test-netconnection 10.0.0.201 -port 443
+get-azresource *migrate*
+help get-azresource -full
+help get-azresource -name '*migrate*'
+get-azresource -name '*migrate*'
+net share
+get-localuser
+ping 8.8.8.8
+ssh mj@10.0.0.145
+test-netconnection 10.0.0.145 -Port 1433
+ping 10.0.0.201
+ping 8.8.8.8
+ping google.com
+ipconfig /all
+ssh mj@10.0.0.125
+ssh mj@10.0.0.145
+ssh mj@10.0.0.125
+docker run -e 'ACCEPT_EULA=Y' -e MSSQL_SA_PASSWORD='P@ssw0rd' --name 'sql1' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+docker ps
+docker --help
+docker images
+docker run sql1
+docker start sql1
+docker ps
+choco searh ccleaner
+choco -?
+choco search ccleaner
+docker start sql1
+cls
+cd .\OneDrive\_Git\
+git clone https://github.com/LanikSJ/slack-dark-mode
+cd .\slack-dark-mode\
+.\slack-dark-mode.ps1
+choco --help
+choco upgrade slack
+ssh mj@10.0.0.125
+ssh mj@10.0.0.145
+gcm *migrate*
+new-azvm | gm
+help new-azvm -full
+help new-azvm -online
+update-help -Force -ErrorAction SilentlyContinue
+ipconfig
+get-azvm
+get-azvm | gm
+get-azvm -status | gm
+get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1' -status
+$vmstate=get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1' -status
+$vmstate.Statuses.displaystatus
+$vmstate=get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1'
+$vmstate.Statuses.displaystatus
+$vmstate=get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1' -status
+get-help get-azvm -full
+get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1' -status
+get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1'
+get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1' | select *
+get-help Get-AzPolicySetDefinition
+get-help Get-AzPolicySetDefinition -online
+Get-AzPolicySetDefinition -Builtin
+Get-AzPolicySetDefinition -Builtin | where {$_.properties.displayname -like 'sku'}
+Get-AzPolicySetDefinition -Builtin | where {$_.properties.displayname -like '*sku*'}
+Get-AzPolicySetDefinition -Builtin | where {$_.properties.displayname -like '*audit*'}
+Get-AzPolicySetDefinition -Builtin | where {$_.properties.displayname -like '*VM*'}
+Get-AzPolicySetDefinition -Builtin | where {$_.properties.displayname -like '*SKU*'}
+Get-AzPolicyDefinition -Builtin | where {$_.properties.displayname -like '*SKU*'}
+help Set-AzPolicyDefinition -online
+Get-AzPolicyDefinition -Builtin | where {$_.properties.displayname -like '*machine SKU*'}
+$def=Get-AzPolicyDefinition -Builtin | where {$_.properties.displayname -like '*machine SKU*'}
+$def
+$def | select *
+Get-AzSubscription
+help set-azvm -online
+gcm -noun *expire*
+help new-azvm -online
+Get-AzADApplication -DisplayNameStartWith 'm'
+Get-AzADApplication -DisplayNameStartWith 'mjt'
+Get-AzAutomationConnection
+gcm Add-AzAccount
+get-azvm -ResourceGroupName rtpsug-sat -Name 'windows1' -status
+gcm save*
+d:
+cd .\OneDrive\_Git\
+ls
+cd .\posh\
+saves-script manage-azurermblueprint -path .\ -repository psgallery
+save-script manage-azurermblueprint -path .\ -repository psgallery
+ls
+gc .\Manage-AzureRMBlueprint.ps1
+new-azresourcegroup -name myWebApp -location 'Central US'
+New-AzAppServicePlan -Name myWebAppPlan -Location 'Central US' -ResourceGroupName myWebApp
+Get-AzAppServicePlan | select *
+Get-AzAppServicePlan | gm
+$app = Get-AzAppServicePlan -Name mywebapp
+$app
+get-azappserviceplan
+$app=get-azappserviceplan
+$app.WorkerTierName
+$app.tier
+gcm stop-azapp*
+gcm stop-azwebapp*
+get-azvmsize -location 'central us'
+Get-AzVMSize -Location 'East US 2'
+get-azresource -ResourceGroupName rtpsug -name demo2*
+get-azresource -ResourceGroupName rtpsug-sat -name "demo2*"
+get-azresource -ResourceGroupName rtpsug-sat -name "demo2*" | remove-azresource -verbose
+(Invoke-Webrequest https://mcr.microsoft.com/v2/mssql/server/tags/list).content
+get-azvm
+get-azvm -status
+get-azvm -ResourceGroupName demo-rg | stop-vm -force
+get-azvm -ResourceGroupName demo-rg | stop-azvm -force
+get-azvm -status
+get-azvm -status | select name,powerstate
+get-azvm | select name,powerstate
+get-azresource *migrate*
+get-azresource -name *migrate*
+226-209
+get-azresourcegroup -name rtpsug-sat | Remove-AzResourceGroup -force -verbose
+get-azresourcegroup -name test | remove-azresourcegroup -force
+ssh 10.0.0.1
+ssh ubnt@10.0.0.1
+ping 192.168.1.4
+test-netconnection 192.168.1.4 -port 3389
+test-netconnection 192.168.1.4 -port 3389
+ping 192.168.1.4 -t
+ping 10.0.0.1 -t
+ipconfig
+get-azvm demo-3 | restart-azvm -verbose -force
+gcm restart-az*
+get-azvm -name demo-3 | restart-azvm
+test-netconnection 192.168.1.4 -port 3389
+get-azresource -nam VM-b6*
+get-azresource -name NIC-b6*
+get-azresource -name NIC-b6* | remove-azresource -force
+ping 40.83.9.191
+ssh ubnt@10.0.0.1
+ping 10.0.0.100
+test-netconnection 192.168.1.4 -port 3389
+gip
+ssh ubnt@10.0.0.1
+cls
+Get-AzNetworkInterface -Name NIC-b68*
+gcm -noun aznicinterface
+gcm -noun aznetworkinterface
+help set-aznetworkinterfce
+help set-aznetworkinterface
+Get-AzNetworkInterface -Name NIC-b68* | Remove-AzNetworkInterface -Force
+ssh ubnt@10.0.0.1
+ping 192.168.0.4
+get-azvm -name demo1 | stop-azvm -Verbose -force
+docker start sql1
+docker ps
+docker images
+docker start sql1
+get-process slack
+get-process slack | stop-process
+docker start sql1
+cls
+docker search active directory
+docker search activ
+docker search active-directory
+docker --help
+docker ps
+docker pull hello-world: latest
+docker pull hello-world:latest
+docker run hello-world
+docker run -it ubuntu bash
+docker pull mcr.microsoft.com/windowsservercore:latest
+choco search windows terminal
+$a = Get-ComputerInfo
+$a | out-string -Stream | select -first 10
+choco search windows terminal
+Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+Install-Package -Name docker -ProviderName DockerMsftProvider
+(Invoke-Webrequest https://mcr.microsoft.com/v2/powershell/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/iis/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/ubuntu/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/core/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/windows/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/windowsserver/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/servercore/tags/list).content
+(Invoke-Webrequest https://mcr.microsoft.com/v2/windows-server/tags/list).content
+docker pull mcr.microsoft.com/windowsservercore-insider
+gcm *credssp*
+update-help -force -ErrorAction SilentlyContinue
+[http://System.IO.Path]::GetTempFileName()
+([guid]::NewGuid()).Guid
+[System.IO.Path]::GetTempFileName()
+[Io.Path]::GetRandomFileName()
+docker start sql1
+ping 1.1.1.1 -t
+docker start sql1
+ping 10.0.0.201
+test-netconnection 10.0.0.201 -Port 443
+Test-NetConnection -ComputerName 10.0.0.123 -Port 443
+Test-NetConnection -ComputerName 10.0.0.201 -Port 443
+get-azvm
+ping google.com -t
+ping 10.0.0.1
+ping google.com -t
+Get-AzNetworkSecurityGroup -name demo1-nsg -detailed
+Get-AzNetworkSecurityGroup -name demo1-nsg -ExpandResource
+Get-AzNetworkSecurityGroup -name demo1-nsg
+get-azvm -name fs1 | start-azvm -verbose
+ipconfig
+Test-NetConnection -ComputerName 192.168.0.6 -port 3389
+Test-NetConnection -ComputerName 192.168.0.6 -port 445
+ping fs1
+ping 192.168.0.6
+docker start sql1
+cd .\azuredocs\
+git push
+cd\
+cd temp
+Invoke-WebRequest -Uri https://github.com/fivethirtyeight/data/blob/master/avengers/avengers.csv
+ls
+Invoke-WebRequest -Uri https://github.com/fivethirtyeight/data/blob/master/avengers/avengers.csv -path .\
+Invoke-WebRequest -Uri https://github.com/fivethirtyeight/data/blob/master/avengers/avengers.csv -path avengers.csv
+Invoke-WebRequest -Uri https://github.com/fivethirtyeight/data/blob/master/avengers/avengers.csv -OutFile avengers.csv
+ls
+Invoke-WebRequest -Uri https://github.com/fivethirtyeight/data/blob/master/avengers/avengers.csv | select-object -ExcludeProperty content | Out-File avenge.csv
+start avenge.csv
+Invoke-WebRequest -Uri 'https://github.com/fivethirtyeight/data/blob/master/avengers/avengers.csv' -OutFile avengers.csv
+start avengers.csv
+invoke-webrequest -uri 'https://raw.githubusercontent.com/fivethirtyeight/data/master/avengers/avengers.csv' -outfile avengers.txt
+avengers.txt
+start avengers.txt
+get-azvm
+get-azvm -Status
+$status = get-azvm -status
+$status.Statuses.displaystatus
+$status.displaystatus
+#status
+$status
+$status.status.displaystatus
+$vmstate = Get-AzVm -ResourceGroupName 'my-migrate' -status
+$vmstate
+vmstate.statuses.displaystate
+$vmstate.statuses.displaystate
+$vmstate.status.displaystate
+$vmstate.displaystate
+get-vm | stop-vm
+get-azvm | stop-azvm -verbsose
+get-azvm | stop-azvm -verbose
+docker start sql1
+ipconfig /all
+Write-Progress
+Write-GitStatus
+ls
+gc tree.txt
+ls
+gc ip.txt
+del ip.txt
+ls
+ps
+pwsh
+cls
+ls
+ssh mj@10.0.0.125
+ipconfig
+ipconfig /all
+ipconfig /renew
+gcm *dns*
+Get-DnsClient
+Get-DnsClient | select *
+cls
+Get-DnsClientServerAddress
+Get-DnsClientServerAddress -InterfaceAlias 'ethernet'
+ps -name '*chrome*'
+ps
+ps -name 'zoom'
+ps -name 'zoom' | Stop-Process
+gcm *dhcp*
+ipconfig /renew
+docker start sql1
+choco search chromium
+docker start sql1
+gcm *dbaadmin*
+Get-DbaDbSpace -SqlInstance localhost | outgridview
+Get-DbaDbSpace -SqlInstance localhost | out-gridview
+Get-DbaDbSpace -SqlInstance localhost
+Get-DbaDbSpace -SqlInstance localhost,1433
+Get-DbaDbSpace -SqlInstance localhost;1433
+get-help get-dbadbspace
+get-help get-dbadbspace -examples
+get-help get-dbadbspace -full
+Get-DbaDbSpace -SqlInstance localhost -SqlCredential (get-credential)
+docker search microsoft | grep sql
+docker search microsoft
+docker search microsoft | select-string sql
+cd .\OneDrive\_Git\
+ls
+cd ..
+cd '.\Dropbox (Personal)\'
+cd .\onedrive
+cd ..\onedrive
+d:
+ls
+cd .\OneDrive\_Git\
+cd .\author-hub\
+git push
+git pull
+git push
+ls
+cd dbx
+git push
+cd dbx
+cd teske
+ls
+exit
+d:
+cd .\OneDrive\_Git\
+git pull
+cd .\author-hub\
+ls
+git pull
+git push
+d:
+cd .\OneDrive\_Git\
+git pull
+cd author-hub
+git push
+git --help
+git push
+cd .\_Git\author-hub\
+git push
+Get-AzVMImagePublisher -Location 'East US'  | Select-Object -First 10
+Get-AzVMImageOffer -Location "East US" -PublisherName "MicrosoftSQLServer"
+Get-AzVMImageSku -Location "East US" -PublisherName "MicrosoftSQLServer" -Offer "SQL2017-WS2016"
+Get-AzVMImage -Location "East US" -PublisherName "MicrosoftSQLServer" -Offer "SQL2017-WS2016" -Skus "SQLDEV"
+enable-psremoting -force`
+
+enable-psremoting -force
+get-netadapter
+Get-NetFirewallProfile -interfacealias ethernet
+Get-NetFirewallProfile -name 'ethernet'
+Get-NetFirewallProfile -name 'Ethernet'
+Get-NetFirewallProfile -All
+Get-NetconnectionProfile -interfacealias ethernet
+set-NetconnectionProfile -interfacealias ethernet -NetworkCategory private
+enable-psremoting -force
+set-NetconnectionProfile -interfacealias 'ethernet 2' -NetworkCategory private
+enable-psremoting -force
+get-netadapter
+$adapter = (get-netadapter).name
+$adapter
+cd .\_git\Petri\
+cd .\Images\
+md post-6
+Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'}
+Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} | select properties
+Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} | select properties[0]
+Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} | select properties -ExpandProperty
+Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} | select properties -ExpandProperty displayname
+Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} | select properties.displayname
+$pol=Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} 
+$pol.properties.displayname
+cls
+$pol=Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} 
+cd\
+cls
+$policy=Get-AzPolicyDefinition | Where-Object {$_.properties.displayname -like '*sku*'} 
+$policy.properties.displayname
+$psversiontable
+iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
+$psversiontable
+1..100 | foreach -Process {start-sleep .5;write-host -nonewline "$_ "}
+dotnet tool install -global powershell
+dotnet tool install --global powershell
+install-module -name psreleasetools -force
+install-pspreview -Mode quiet
+pwshe
+pwsh
+exit
+1..100 | foreach -Parallel {Start-Sleep 1;write-host "$_ " -ForegroundColor blue}
+cd .\_Git\
+git clone https://github.com/theJasonHelmick/PowerShellImages.git
+sl C:\Users\micha\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\
+get-azcontext
+register-azresourceprovider -ProviderNamespace microsoft.hybridcompute
+register-azresourceprovider -ProviderNamespace microsoft.guestconfiguration
+Get-LocalUser
+find-module ubiquiti*
+docker start sql1
+gcm *sql*
+gcm *sql* | where {$_.source -like 'sqlserver'}
+get-help write-sqltabledata -full
+get-process | select name
+cls
+get-process | select name | Write-SqlTableData -ServerInstance "localhost" -DatabaseName "server_info" -SchemaName "dbo" -TableName "serverinfo" -Credential (get-credential)
+cup --all
+cup -all
+cup all
+ssh mj@10.0.0.125
+gcm *computer*
+get-computername
+Get-DbaComputerSystem
+choco list
+cls
+choco list --local-only
+choco search visualstudio
+docker ps
+docker start sql1
+docker ps
+ping google.com
+ping 8.8.8.8
+ipconfig
+ping 10.0.0.1
+ping 8.8.8.8
+(get-location).path
+$env
+ls $env:
+ls $env
+cls
+clear
+gcm *profile*
+$env:Path
+$env:PSModulePath
+$env:profile
+$env:PSModulePath
+ls
+cd .\.vscode\
+ls
+cd ..
+. $profile
+docker start sql1 -it
+docker start -it sql1
+docker start sql1
+docker start -it sql1
+docker start sql1
+docker run sql1 hostname
+ise
+$profile
+code $profile
+Get-AzResourceProvider
+get-azresourceprovider | where $_.providernamespace -like 'guest'
+get-azresourceprovider | where {$_.providernamespace -like 'guest'}
+get-azresourceprovider | where {$_.providernamespace -like '*guest*'}
+get-azresourceprovider | where {$_.providernamespace -like '*hybrid*'}
+get-azresourceprovider | where {$_.providernamespace -like '*hybridcompute*' -and '*guest*'}
+get-azresourceprovider | where {$_.providernamespace -like '*hybridcompute*' -or '*guest*'}
+cls
+get-azresourceprovider | select providernamespace
+cls
+get-azresourceprovider | where {$_.providernamespace -like '*hybridcompute*'}
+get-azresourceprovider | where {$_.providernamespace -like '*guestconfiguration*'}
+clear
+cd\
+cls
+get-azresourceprovider | where {$_.providernamespace -like '*hybridcompute*'}
+get-azresourceprovider | where {$_.providernamespace -like '*guestconfiguration*'}
+gcm *vi*
+gcm connect
+gcm -verb connect
+connect-viserver 10.0.0.201
+get-vm
+help start-vm
+get-vm
+start-vm -VM dc1,fs1,sql1,web
+cls
+ping 8.8.8.8 -t 0
+ping 8.8.8.8 -t
+ping 10.0.0.1
+ping 10.0.0.1 =-t
+ping 10.0.0.1 -t
+gcm -noun vmprocessor
+docker ps
+get-process | select name | Write-SqlTableData -ServerInstance "localhost" -DatabaseName "server_info" -SchemaName "dbo" -TableName "serverinfo" -Credential (get-credential)
+get-help Get-DbaInstance -examples
+cls
+get-help Get-DbaInstance
+New-AzResourceGroup -Name StoragePractice -Location centralus
+New-AzStorageAccount -name StorageAccountPractice -ResourceGroupName StoragePractice -Location centralus
+New-AzStorageAccount -name storageaccountpractice -ResourceGroupName StoragePractice -Location centralus
+$key = (Get-AzStorageAccountKey -ResourceGroupName storagepractice -Name storageaccountpractice)[0].value
+$context = New-AzStorageContext -StorageAccountName storageaccountpractice -StorageAccountKey $key
+New-AzStorageContainer -name images -Context $context -Permission Blob
+ls
+ls *.png
+f.png
+start f.png
+Set-AzStorageBlobContent -File ./f.png -Container images -blob 'f.png' -Context $context
+Get-AzStorageBlob
+Get-AzStorageBlob -Container images -Context $context
+Get-AzStorageBlobContent -Blob 'f.png' -container images -Destination 'fu.png' -Context $context
+start fu.png
+Get-AzResourceGroup -Name StoragePractice
+Remove-AzResourceGroup StoragePractice -Force
+$input = 'This is an example of a string. It demonstrates "stuff".'
+$input -match 'example'
+help *match*
+get-help about_Operators
+get-help about_comparison_Operators
+1 -match 4
+$input
+$input = 'This is an example of a string. It demonstrates "stuff".'
+$input -match 'example'
+$input
+$input = 'this'
+$input -match this
+$input -match 'this'
+$input
+$input = 'this'
+$input
+$stuff = 'this'
+$stuff
+$input = 'this'
+$input
+docker version
+docker start hello-world
+docker run hello-world
+cd\
+docker run -it mcr.microsoft.com/windows/servercore
+docker run -it mcr.microsoft.com/windows/servercore powershell
+docker start sql1
+docker run -it mcr.microsoft.com/windows/servercore
+docker run -it mcr.microsoft.com/windows/servercore powershell
+docker run hello-world
+docker run -it mcr.microsoft.com/windows/servercore powershell
+docker run  mcr.microsoft.com/windows/servercore powershell
+docker run mcr.microsoft.com/windows/servercore powershell
+docker info  -f '{{.OSType}}/{{.Architecture}}'
+docker pull microsoft/windowsservercore
+docker run mcr.microsoft.com/windows/servercore:ltsc2019
+docker run mcr.microsoft.com/windows/servercore:latest
+docker ps
+docker list
+docker
+docker images
+docker run ltsc2019
+docker run 49e459dc7a6b
+docker run 49e459dc7a6b powershell
+docker ps
+docker start 49e459dc7a6b powershell
+docker start 49e459dc7a6b
+docker run -it 49e459dc7a6b powershell
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=P@ssw0rd' --name wsql -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
+docker image
+docker image ls
+docker start sql1
+ssh mj@10.0.0.125
+install-module graphical
+cd ..
+ls
+e:
+ls
+cd '.\Dropbox (Personal)\'
+ls
+ls *.
+gc history.txt
+ls
+$lengh = gci .\NetEss-Spring-2017.zip | select Length
+$lengh/1mb
+$lengh
+$length = gci .\NetEss-Spring-2017.zip | select Length -ExpandProperty
+$length = gci .\NetEss-Spring-2017.zip | select -ExpandProperty length
+$length/1mb
+del netess*.zip
+md _1944-AZ900
+ping docker
+ping 10.0.0.175
+27-19
+e:
+ls
+cd '.\Dropbox (Personal)\'
+cd .\_Pluralsight\Courses\Migration\Refactor\maintenance\
+md mod2
+md mod3
+md mod4
+ping 8.8.8.8 -t
+get-service *web*
+'booger' -replace 'snot', 'a booger is not funny'
+'snot is not funny' -replace 'snot', 'boogers'
+'fuck it''s god damn smelly out' -replace 'fuck','fart'
+ls
+gc test.txt
+gc test.txt -TotalCount
+(gc test.txt) -replace 'Adatum','boogers'
+'stink.txt' -match 's*nk.txt'
+'tink.txt' -match 's*nk.txt'
+'stink.txt' -match 'q*nk.txt'
+'stink.tt' -match 'q*nk.txt'
+'stink.txt' -match 's+tink.txt'
+'stink.txt' -match 'b+tink.txt'
+'ssstink.txt' -match 's?tink.txt'
+'zzzztink.txt' -match 's?tink.txt'
+'zzzztink.txt' -match 's.tink.txt'
+'stink.txt' -match 's.ink.txt'
+@"this is a new line
+@"this is a new line"@
+@"`
+this`
+is`
+a`
+new`
+line`
+"@ -match '\n'
+'123' -match '\d'
+@"`
+this`
+is`
+1`
+number`
+"@ -match '\n\d'
+@"`
+this`
+is`
+one`
+number`
+"@ -match '\n\d'
+'123' -match '\D'
+'this is not a number' -match '\D'
+'hello123' -match '\w'
+'hello1~3' -match '\w'
+'hello1~3' -match '\W'
+'hello13' -match '\W'
+'~~~~~' -match '\w'
+'~~~~~' -match '\W'
+'some stuff' -match 'value$'
+'some stuff' -match 'stuff$'
+'some value again' -match '^some'`
+
+'some value again' -match '^value'
+'some value again' -match '^s'
+ 'whitespace is here' -match '\s'
+'nowhitespace' -match '\S'
+'nowhitespace' -match '\s'
+' ' -match '\S'
+'' -match '\S'
+'\\path\with\slashes' -match '\slashes'
+'\\path\with \slashes' -match '\slashes'
+'\\path\with\s lashes' -match '\slashes'
+'\\path\with\slashes' -match '\\slashes'
+'\\path\withslashes' -match '\\slashes'
+'\\path\with\slashes' -match '\\slashes'
+'some123' -match '\d{3}'
+'some123' -match '\d{2}'
+'some123' -match '\d{4}'
+'some1a2a3a' -match '\d{3}'
+'some123' -match '\d{2,4}'
+'some1' -match '\d{2,4}'
+'some1234' -match '\d{2,4}'
+'some12345' -match '\d{2,4}'
+'hell123hell123' -match '(hell123){2}'
+'hell123hell123' -match '(hell123){3}'
+'hell123hell123' -match '(hell12){2}'
+'some' -match '[efg]$'
+'some' -match '[efg]^'
+'some' -match '[efgs]^'
+'some' -match '^[efgs]'
+'some' -match '^[sefg]$'
+'some' -match '^[s][sefg]$'
+'some' -match '^[s],[sefg]$'
+'something' -match '[^qrs]$'
+'something' -match '[^gqrs]$'
+'domain\username' -replace '\w+\\', ''
+[regex]::matches('domain\username', '\w+$')
+([regex]::matches('domain\username', '\w+$')).value
+'192.168.1.1' -match '(\d{1,3}\.){3}\d{1,3}'
+'123-13-1234' -match '\d{3}-\d{2}-\d{4}'
+gh
+ghy
+(ghy).CommandLine
+gc text.txt
+ls
+gc test.txt
+(gc test.txt) -match 'Adatum'
+gc test.txt | select-string -match 'Adatum'
+gc test.txt | select-string -pattern 'Adatum'
+(gc test.txt) -replace ',',''
+$message = 'hello from xray'
+$message -like '?ello'
+$message -like '*ello'
+$message -like '*ello*'
+$message -like '?ello*'
+$message -clike '?Ello*'
+ls *.txt
+gc school.txt
+(gc test.txt) -replace ',',''
+(gc school.txt) -match '(\d{1,3}\.){3}'
+irm icanhasip.com
+irm icanhazip.com
+function WhatsMyIp {`
+  Invoke-RestMethod http://ipinfo.io/json | `
+    Select-Object -Expand ip`
+}
+whatsmyip
+help irm -full
+update-help -ErrorAction SilentlyContinue
+gcm -noun module
+update-module -AcceptLicense -Force
+git
+cd .\_Git\
+git --list
+ls
+git status
+cd posh
+git status
+ping google.com
+dsregcmd
+dsregcmd /status
+docker start sql1
+winver
+docker version
+docker-compose version
+cd _git
+ls
+git clone sixeyed/diamo1
+git clone sixeyed/diamol
+git clone https://github.com/sixeyed/diamol
+docker container run diamol/ch02-hello-diamol
+git config
+git config --list
+git status
+cd posh
+git status
+cd .\containers\
+git status
+cd ..
+git status
+git add .
+git commit -m "update container demo"
+git push
+iex "& { $(irm https://aka.ms/install-powershell.ps1) } -UseMSI"
+start https://aka.ms/powershell
+iex "& { $(irm https://github.com/powershell/powershell/powershell/powershell-7.0.0-rc1-win-x64) }"
+cd _git
+git clone https://github.com/WaypointVentures/azfundedu.git
+ls
+cd .\azfundedu\
+ls
+git show-branch
+ping docker
+docker -H 10.0.0.175 -version
+docker -H 10.0.0.175 version
+Set-VMProcessor -vmname win10 -ExposeVirtualizationExtensions $true
+get-vm
+Set-VMProcessor -vmname w10 -ExposeVirtualizationExtensions $true
+start-vm w10
+docker ps -a
+cd ..
+cd .\azfundedu\
+git status
+git pull
+git status
+ise
+cd git
+cd _git
+ cd .\azfundedu\
+git pull
+git config --lost
+git config --list
+cls
+update-module
+$resourcegroupname = "storage-rg"
+$storageaccountname= "teskestorageaccount"
+Test-NetConnection -ComputerName ([System.Uri]::new($storageAccount.Context.FileEndPoint).Host) -port 445
+$storageAccount = Get-AzStorageAccount -ResourceGroupName $resourcegroupname -Name $storageaccountname
+Test-NetConnection -ComputerName ([System.Uri]::new($storageAccount.Context.FileEndPoint).Host) -port 445
+cmdkey /list
+$storageAccountKeys = Get-AzStorageAccountKey -ResourceGroupName $resourceGroupName -Name $storageAccountName
+cmdkey /list
+$fileShare = Get-AzStorageShare -Context $storageAccount.Context | Where-Object { `
+    $_.Name -eq $fileShareName -and $_.IsSnapshot -eq $false`
+}
+if ($fileShare -eq $null) {`
+    throw [System.Exception]::new("Azure file share not found")`
+}
+$fileShareName = "public"
+$fileShare = Get-AzStorageShare -Context $storageAccount.Context | Where-Object { `
+    $_.Name -eq $fileShareName -and $_.IsSnapshot -eq $false`
+}
+if ($fileShare -eq $null) {`
+    throw [System.Exception]::new("Azure file share not found")`
+}
+$fileshare
+help new-psdrive -example
+$password = ConvertTo-SecureString -String $storageAccountKeys[0].Value -AsPlainText -Force
+$credential = New-Object System.Management.Automation.PSCredential -ArgumentList "AZURE\$($storageAccount.StorageAccountName)", $password
+New-PSDrive -Name "g" -PSProvider FileSystem -Root "\\$($fileShare.StorageUri.PrimaryUri.Host)\$($fileShare.Name)" -Credential $credential -Persist
+New-PSDrive -Name "g" -PSProvider FileSystem -Root "\\$($fileShare.StorageUri.PrimaryUri.Host)\$($fileShare.Name)" -Credential (get-credential) -Persist
+cd .\_Git\azfundedu\
+git pull
+docker run -e 'ACCEPT_EULA=Y' -e MSSQL_SA_PASSWORD='P@ssw0rd' --name 'sql1' -p 1433:1433 -d 
+docker run sql1 hostname
+docker start -it sql1
+docker start sql1
+cd .\_Git\
+ls
+cd .\azfundedu\
+git status
+cd .\_Git\azfundedu\
+git pull
+git status
+git pull
+git status
+git branch --list --all
+git pull
+ls 
+cd course materials
+ls
+cd _git
+ls
+cd .\azfundedu\
+git status
+git checkout master
+git pull
+git status
+git show branch
+git branch
+git ?
+git branch
+git pull
+git merge origin/master
+Get-PSReadLineOption
+cd _git
+cd .\azfundedu\
+git status
+git commit -m "added notes with URLs for all videos for my modules"
+git add .
+git commit -m "added notes with URLs for all videos for my modules"
+git branch --list --all
+git push
+git add .
+git commit -message "Started Mod3 SG, MI and LP"
+git status
+git add .
+git commit -m "first edits for mod3"
+git push
+find-module get-psrelease
+install-module psreleasetools -Scope CurrentUser
+get-psreleasecurrent -preview
+install-pspreview -verbose
+get-host
+choco install powertoys
+choco install powertoys -y
+cd .\_Git\azfundedu\
+cd .\_git\azfundedu\
+git show branch
+git merge origin/master
+git status
+cls
+git push
+git status
+git add .
+git commit -m "completed lesson 2"
+git push
+git add .
+git commit -m "working through final lesson"
+git push
+git add .
+git commit -m "working through final lesson2"
+git push
+git add .
+git commit -m "fixed subscription png"
+git add .
+git commit -m "fixed subscription png"
+git push
+git add .
+git commit -m "added scenario"
+git push
+git show branch
+git branch --list --all
+git add .
+git commit -m "added meta to lesson plans"
+git push
+cd .\_Git\azfundedu\
+git status
+git add .
+git commit -m "moved files from old branch to module branch"
+git push
+cd _git
+cd .\azfundedu\
+git status
+git branch
+git push origin --delete m4authteske
+git push origin --delete m5authteske
+git push origin --delete m8authteske
+git branch m4teske
+git branch m5teske
+git branch m8teske
+git add .
+git commit -m "updating LP1 and some changes to SG"
+git push
+git add .
+git commit -m "updating LP1 questions"
+git push
+git add .
+git commit -m "updating LP1 sbs instructions"
+git push
+git add .
+git commit -m "updating LP1 fd up the questions"
+git push
+git add .
+git commit -m "cleaning things up"
+git add .
+git commit -m "cleaning things up"
+git push
+git add .
+git commit -m "cleaning things up"
+git push
+git add .
+git commit -m "cleaning things up"
+git push
+git add .
+git commit -m "fixed markdown"
+git push
+git add .
+git commit -m "SG and LP 1 ready for ID review"
+git push
+git status
+git add .
+git commit -m "Completed LP2"
+git push
+git add .
+git commit -m "Completed LP2"
+git push
+git add .
+git commit -m "Cornerstone LP and LP 3 completed"
+git push
+git add .
+git commit -m "module 3 prep guide complete"
+git push
+get-windowsfeature
+gcm -verb get
+cls
+gcm -verb get -noun *feature*
+Get-WindowsOptionalFeature
+Get-WindowsOptionalFeature -FeatureName *sand*
+Get-WindowsOptionalFeature -FeatureName '*sand*'
+cls
+get-help Get-WindowsOptionalFeature -full
+Get-WindowsOptionalFeature -Online
+Get-WindowsOptionalFeature -online
+Get-WindowsOptionalFeature -featurename "*sand*"-online
+Get-WindowsOptionalFeature -featurename "*sand*" -online
+get-localdisk
+get-disk
+get-disk | fl
+e:
+md _repos
+cd .\_repos\
+git branch
+git clone https://github.com/WaypointVentures/azfundedu.git
+git branch
+ls
+cd .\azfundedu\
+git branch
+git checkout /?
+git checkout ?
+git checkout
+git help
+git help -g
+git help -a
+git help -a checkoiut
+git help -a checkout
+git help checkout
+git checkout m3authteske
+Invoke-RestMethod -uri "https://api.myip.com"
+choco list -local-only
+choco upgarde powershell-core
+choco upgrade powershell-core
+(get-date).AddMinutes(-50)
+(get-date).AddMinutes(-50) + get-date
+get-process *chrome*
+get-process
+get-process *google*
+get-process *google* | stop-process
+get-help Invoke-RestMethod -online
+$flameboss = Invoke-RestMethod -uri https://myflameboss.com/
+$flamboss
+$flameboss = Invoke-RestMethod https://myflameboss.com/en/cooks/800820
+$flameboss
+$flameboss.Equals(250)
+$flameboss | gm
+cls
+37/3
+cd _git
+ls
+cd posh
+git add .
+git commit -m 'added git cheats'
+git push
+e:
+dir
+dir _
+dir _*
+cd _repos
+git clone https://github.com/WaypointVentures/azfundedu.git
+dir
+del azfundedu
+remove-item -Recurse -Force
+ls
+git clone https://github.com/WaypointVentures/azfundedu.git
+choco list -local-only
+find-module *ubiquiti*
+find-module *unify*
+get-azvm
+“$(41..47 -join '","' )"`
+`
+
+“$(41..47 -join ',' )"`
+`
+
+“$(41..47 -join ' FUCK ' )"`
+`
+
+“$(41..47 -join ' FUCK! ' )"`
+`
+
+choco upgrade
+choco upgrade all
