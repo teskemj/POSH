@@ -120,6 +120,8 @@ choco install microsoft-edge -y
 choco install office365proplus -y
 choco install adobereader -y
 
+choco --list local-only
+
 cinst boxstarter -y
 
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar -EnableOpenFileExplorerToQuickAccess -EnableShowRecentFilesInQuickAccess -EnableShowFrequentFoldersInQuickAccess -EnableExpandToOpenFolder -EnableShowRibbon
