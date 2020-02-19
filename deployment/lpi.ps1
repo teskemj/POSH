@@ -115,10 +115,12 @@ Rename-Computer lpi-022020-1 -restart
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 choco install powershell-core -y
-choco install micrososft-edge -y
 choco install microsoft-edge -y
 choco install office365proplus -y
 choco install adobereader -y
+choco install microsoft-windows-terminal -y
+choco install vscode -y
+
 
 cinst boxstarter -y
 
