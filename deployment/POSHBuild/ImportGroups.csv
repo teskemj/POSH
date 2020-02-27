@@ -1,0 +1,7 @@
+Name,GroupCategory,GroupScope,Path
+Accounting_group,Security,Global,"ou=Accounting,ou=corp,dc=yourdomain,dc=local"
+InfoTech_group,Security,Global,"ou=InfoTech,ou=corp,dc=yourdomain,dc=local"
+Manufacturing_group,Security,Global,"ou=Manufacturing,ou=corp,dc=yourdomain,dc=local"
+Developers_group,Security,Global,"ou=Developers,ou=corp,dc=yourdomain,dc=local"
+Sales,Security,Global,"ou=Sales,ou=corp,dc=yourdomain,dc=local"
+Executive,Security,Global,"ou=Executive,ou=corp,dc=yourdomain,dc=local"
