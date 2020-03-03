@@ -13,7 +13,7 @@
    - Reboot
    - Log in as user
       - Username
-      - kenssportspassword (typically, if not, ask for their password)
+      - ************ (typically, if not, ask for their password)
    - Start Windows updates (do this right away as it will take some time)
    
 2. Install Lightspeed client software
