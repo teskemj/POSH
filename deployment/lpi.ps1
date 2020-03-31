@@ -118,6 +118,8 @@ choco install powershell-core -y
 choco install microsoft-edge -y
 choco install office365proplus -y
 choco install adobereader -y
+
+
 choco install microsoft-windows-terminal -y
 choco install vscode -y
 
