@@ -133,3 +133,7 @@ Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtec
 Set-WindowsExplorerOptions -EnableShowHiddenFilesFoldersDrives -EnableShowProtectedOSFiles -EnableShowFileExtensions -EnableShowFullPathInTitleBar -EnableOpenFileExplorerToQuickAccess -EnableShowRecentFilesInQuickAccess -EnableShowFrequentFoldersInQuickAccess -EnableExpandToOpenFolder -EnableShowRibbon
 powercfg -h off
 # End region
+
+$newIDURL = 'https://genident.azurewebsites.net/api/newidentity'
+$idList = for ($i = 0; $i -lt 25; $i++) { Invoke-RestMethod -uri $newIDURL }
+$idList | Sort-Object -Property surname | Select-Object -Property surname, givenname, city, stateid

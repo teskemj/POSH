@@ -3,18 +3,19 @@ Connect-AzAccount
 
 # View VM sizes avaiable in your region
 Get-AzVMSize -Location 'Central US'
-
+$cred = Get-Credential
 # Assign arguments
 $newvm = @{
     ResourceGroupName   = "demo-rg"
-    Name                = "demo-3"
-    Location            = "CentralUS"
-    VirtualNetworkName  = "demo-vnet"
-    SubnetName          = "default"
+    Name                = "demo-2"
+    Location            = "EastUS"
+    VirtualNetworkName  = "demo-vnet1"
+    SubnetName          = "frontend"
     SecurityGroupName   = "demo-1-nsg"
     PublicIpAddressName = "demo-3-ip"
-    OpenPorts           = 80, 3389
     Size                = "Standard_B1ms"
+    Image               = "UbuntuLTS"
+
 }
 
 # Create Demo3 

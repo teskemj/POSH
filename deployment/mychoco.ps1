@@ -22,3 +22,4 @@ choco install brave
 choco install azure-data-studio-sql-server-admin-pack -y
 choco install azurestorageexplorer -y
 choco install sql-server-management-studio -y
+Install-Module az -verbose
