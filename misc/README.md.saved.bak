@@ -1,0 +1,10 @@
+# POSH
+
+Migration to Git and Source control
+```powershell
+// this code will be syntax highlighted
+for($i=0; $i++; $i < 10)
+{
+    write-output "hello world"
+}
+```    
