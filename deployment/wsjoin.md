@@ -31,7 +31,7 @@
 ## If the Domain Join option doesn't work (it should), or you think this is easier 😉
 
 1. Right click on the Window icon, select System. Select **System Info** in the upper right corner.
-1. 1. Click Advanced System Settings
+1. Click Advanced System Settings
 1. Click the Computer Name tab.
 1. Click the change button
 1. Select the domain option and type AD and click OK
