@@ -35,3 +35,8 @@ Write-Output "`n" | Out-File $outputFile -Append
 
 # Show completion message
 Write-Output "Forensic analysis data saved to: $outputFile"
+
+#Paolo Frigo, scriptinglibrary.com
+#Ping Sweep
+(1..254) | % {$ip="192.168.0.$_"; Write-output "$IP  $(test-connection -computername "$ip" -quiet -count 1)"}
+(1..254) | % {$ip="192.168.0.$_"; ping $ip -c 1}

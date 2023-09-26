@@ -28,3 +28,9 @@ foreach ($photo in $photos) {
 
 # Output a message when the script has completed
 Write-Host "Organizing photos complete!"
+
+
+New-ScheduledTask: Used to create a new scheduled task.
+Get-ScheduledTask: Used to retrieve information about existing scheduled tasks.
+Set-ScheduledTask: Used to modify the properties of an existing scheduled task.
+Remove-ScheduledTask: Used to delete a scheduled task.
